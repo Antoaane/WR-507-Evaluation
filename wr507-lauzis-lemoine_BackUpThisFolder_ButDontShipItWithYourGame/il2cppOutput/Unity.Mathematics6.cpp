@@ -352,36 +352,6 @@ struct uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9_StaticFields
 	uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 ___zero_4;
 };
 
-// Unity.Mathematics.math/IntFloatUnion
-struct IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 
-{
-	union
-	{
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.Int32 Unity.Mathematics.math/IntFloatUnion::intValue
-			int32_t ___intValue_0;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			int32_t ___intValue_0_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.Single Unity.Mathematics.math/IntFloatUnion::floatValue
-			float ___floatValue_1;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			float ___floatValue_1_forAlignmentOnly;
-		};
-	};
-};
-
 // Unity.Mathematics.bool4x2
 struct bool4x2_t1DF140A16C98814548E15AA8F520119EC7C1AADE 
 {
@@ -1604,11 +1574,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186
 // System.Void Unity.Mathematics.float4x2::.ctor(System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float4x2__ctor_mB2296A67C8202F77B9A012097CA1FD080605F57E_inline (float4x2_tC4211FC542D48326AB01E7CEADEC950ADB301A27* __this, float ___v0, const RuntimeMethod* method) ;
 // Unity.Mathematics.float4 Unity.Mathematics.math::select(Unity.Mathematics.float4,Unity.Mathematics.float4,System.Boolean)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E math_select_m7B43FDAE30A8A4D7AD42684DF8C090FC697AF346_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___a0, float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___b1, bool ___c2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E math_select_m7B43FDAE30A8A4D7AD42684DF8C090FC697AF346_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___falseValue0, float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___trueValue1, bool ___test2, const RuntimeMethod* method) ;
 // System.Void Unity.Mathematics.float4x2::.ctor(System.Boolean)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float4x2__ctor_mFF64836914EF6DF89C5BBF0D17329798580592FF_inline (float4x2_tC4211FC542D48326AB01E7CEADEC950ADB301A27* __this, bool ___v0, const RuntimeMethod* method) ;
 // Unity.Mathematics.float4 Unity.Mathematics.math::select(Unity.Mathematics.float4,Unity.Mathematics.float4,Unity.Mathematics.bool4)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E math_select_m8A60689AC883C0130FC2F32E7D1096199D2AD31E_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___a0, float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___b1, bool4_tCEC5DC2AFA83CFCFFFD886434359A9A19056A619 ___c2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E math_select_m8A60689AC883C0130FC2F32E7D1096199D2AD31E_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___falseValue0, float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___trueValue1, bool4_tCEC5DC2AFA83CFCFFFD886434359A9A19056A619 ___test2, const RuntimeMethod* method) ;
 // System.Void Unity.Mathematics.float4x2::.ctor(Unity.Mathematics.bool4x2)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float4x2__ctor_m8CA7B69C3E72C8A310406A5C1DA78E611B60D1B1_inline (float4x2_tC4211FC542D48326AB01E7CEADEC950ADB301A27* __this, bool4x2_t1DF140A16C98814548E15AA8F520119EC7C1AADE ___v0, const RuntimeMethod* method) ;
 // Unity.Mathematics.float4 Unity.Mathematics.float4::op_Implicit(System.Int32)
@@ -1883,10 +1853,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_sin_m231F847C28B88B17B
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_cos_m28B6228E047D552B1312CCFADB8AE95DDD94A6AF_inline (float ___x0, const RuntimeMethod* method) ;
 // System.Void Unity.Mathematics.uint4::.ctor(System.UInt32,System.UInt32,System.UInt32,System.UInt32)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void uint4__ctor_m59B6A219A0285C60FCF2977679BF89C72B502008_inline (uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9* __this, uint32_t ___x0, uint32_t ___y1, uint32_t ___z2, uint32_t ___w3, const RuntimeMethod* method) ;
-// System.UInt32 Unity.Mathematics.math::asuint(System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_asuint_m503D1ABF19E4BA615FD8AE1BF1A2E103BBED6139_inline (float ___x0, const RuntimeMethod* method) ;
-// System.Single Unity.Mathematics.math::asfloat(System.UInt32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m20D259DAAB46464B59BD8BF5678F9D59800F70A9_inline (uint32_t ___x0, const RuntimeMethod* method) ;
 // Unity.Mathematics.float3 Unity.Mathematics.math::sin(Unity.Mathematics.float3)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E math_sin_m43618973AB0574A29896B4479E1F72A829644A33_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___x0, const RuntimeMethod* method) ;
 // Unity.Mathematics.float3 Unity.Mathematics.math::cos(Unity.Mathematics.float3)
@@ -1902,11 +1868,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793
 // Unity.Mathematics.float3x3 Unity.Mathematics.math::float3x3(Unity.Mathematics.float3,Unity.Mathematics.float3,Unity.Mathematics.float3)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3x3_tB318DB8C7E54B6CA9E14EB9AC7F5964C1189FC79 math_float3x3_m9EFCC44816C0612E9EE86D0ADD54D38C0B2BDAFF_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___c00, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___c11, float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___c22, const RuntimeMethod* method) ;
 // System.UInt32 Unity.Mathematics.math::select(System.UInt32,System.UInt32,System.Boolean)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_select_m8BBDC6133225059EE5F0FCA74BA9497AD5496024_inline (uint32_t ___a0, uint32_t ___b1, bool ___c2, const RuntimeMethod* method) ;
-// System.Int32 Unity.Mathematics.math::asint(System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t math_asint_mBDED7FE966CA65F6A8ACEAEF8FD779B1B8998288_inline (float ___x0, const RuntimeMethod* method) ;
-// System.Single Unity.Mathematics.math::asfloat(System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m9FA56DE5C61FCEF3DCD0675252D40DFD9C9B712F_inline (int32_t ___x0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_select_m8BBDC6133225059EE5F0FCA74BA9497AD5496024_inline (uint32_t ___falseValue0, uint32_t ___trueValue1, bool ___test2, const RuntimeMethod* method) ;
+// System.Single Unity.Mathematics.math::asfloat(System.UInt32)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m20D259DAAB46464B59BD8BF5678F9D59800F70A9_inline (uint32_t ___x0, const RuntimeMethod* method) ;
+// System.UInt32 Unity.Mathematics.math::asuint(System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_asuint_m503D1ABF19E4BA615FD8AE1BF1A2E103BBED6139_inline (float ___x0, const RuntimeMethod* method) ;
 // System.Single Unity.Mathematics.math::sqrt(System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_sqrt_mEF31DE7BD0179009683C5D7B0C58E6571B30CF4A_inline (float ___x0, const RuntimeMethod* method) ;
 // Unity.Mathematics.float3 Unity.Mathematics.float3::get_yzx()
@@ -27647,24 +27613,24 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float4x2__ctor_mB2296A67C820
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E math_select_m7B43FDAE30A8A4D7AD42684DF8C090FC697AF346_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___a0, float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___b1, bool ___c2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E math_select_m7B43FDAE30A8A4D7AD42684DF8C090FC697AF346_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___falseValue0, float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___trueValue1, bool ___test2, const RuntimeMethod* method) 
 {
 	{
-		// public static float4 select(float4 a, float4 b, bool c) { return c ? b : a; }
-		bool L_0 = ___c2;
+		// public static float4 select(float4 falseValue, float4 trueValue, bool test) { return test ? trueValue : falseValue; }
+		bool L_0 = ___test2;
 		if (L_0)
 		{
 			goto IL_0005;
 		}
 	}
 	{
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_1 = ___a0;
+		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_1 = ___falseValue0;
 		return L_1;
 	}
 
 IL_0005:
 	{
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_2 = ___b1;
+		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_2 = ___trueValue1;
 		return L_2;
 	}
 }
@@ -27697,7 +27663,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float4x2__ctor_mFF64836914EF
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E math_select_m8A60689AC883C0130FC2F32E7D1096199D2AD31E_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___a0, float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___b1, bool4_tCEC5DC2AFA83CFCFFFD886434359A9A19056A619 ___c2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E math_select_m8A60689AC883C0130FC2F32E7D1096199D2AD31E_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___falseValue0, float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___trueValue1, bool4_tCEC5DC2AFA83CFCFFFD886434359A9A19056A619 ___test2, const RuntimeMethod* method) 
 {
 	float G_B3_0 = 0.0f;
 	float G_B5_0 = 0.0f;
@@ -27722,8 +27688,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186
 	float G_B12_2 = 0.0f;
 	float G_B12_3 = 0.0f;
 	{
-		// public static float4 select(float4 a, float4 b, bool4 c) { return new float4(c.x ? b.x : a.x, c.y ? b.y : a.y, c.z ? b.z : a.z, c.w ? b.w : a.w); }
-		bool4_tCEC5DC2AFA83CFCFFFD886434359A9A19056A619 L_0 = ___c2;
+		// public static float4 select(float4 falseValue, float4 trueValue, bool4 test) { return new float4(test.x ? trueValue.x : falseValue.x, test.y ? trueValue.y : falseValue.y, test.z ? trueValue.z : falseValue.z, test.w ? trueValue.w : falseValue.w); }
+		bool4_tCEC5DC2AFA83CFCFFFD886434359A9A19056A619 L_0 = ___test2;
 		bool L_1 = L_0.___x_0;
 		if (L_1)
 		{
@@ -27731,7 +27697,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186
 		}
 	}
 	{
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_2 = ___a0;
+		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_2 = ___falseValue0;
 		float L_3 = L_2.___x_0;
 		G_B3_0 = L_3;
 		goto IL_0016;
@@ -27739,14 +27705,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD186
 
 IL_0010:
 	{
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_4 = ___b1;
+		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_4 = ___trueValue1;
 		float L_5 = L_4.___x_0;
 		G_B3_0 = L_5;
 	}
 
 IL_0016:
 	{
-		bool4_tCEC5DC2AFA83CFCFFFD886434359A9A19056A619 L_6 = ___c2;
+		bool4_tCEC5DC2AFA83CFCFFFD886434359A9A19056A619 L_6 = ___test2;
 		bool L_7 = L_6.___y_1;
 		G_B4_0 = G_B3_0;
 		if (L_7)
@@ -27756,7 +27722,7 @@ IL_0016:
 		}
 	}
 	{
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_8 = ___a0;
+		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_8 = ___falseValue0;
 		float L_9 = L_8.___y_1;
 		G_B6_0 = L_9;
 		G_B6_1 = G_B4_0;
@@ -27765,7 +27731,7 @@ IL_0016:
 
 IL_0026:
 	{
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_10 = ___b1;
+		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_10 = ___trueValue1;
 		float L_11 = L_10.___y_1;
 		G_B6_0 = L_11;
 		G_B6_1 = G_B5_0;
@@ -27773,7 +27739,7 @@ IL_0026:
 
 IL_002c:
 	{
-		bool4_tCEC5DC2AFA83CFCFFFD886434359A9A19056A619 L_12 = ___c2;
+		bool4_tCEC5DC2AFA83CFCFFFD886434359A9A19056A619 L_12 = ___test2;
 		bool L_13 = L_12.___z_2;
 		G_B7_0 = G_B6_0;
 		G_B7_1 = G_B6_1;
@@ -27785,7 +27751,7 @@ IL_002c:
 		}
 	}
 	{
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_14 = ___a0;
+		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_14 = ___falseValue0;
 		float L_15 = L_14.___z_2;
 		G_B9_0 = L_15;
 		G_B9_1 = G_B7_0;
@@ -27795,7 +27761,7 @@ IL_002c:
 
 IL_003c:
 	{
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_16 = ___b1;
+		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_16 = ___trueValue1;
 		float L_17 = L_16.___z_2;
 		G_B9_0 = L_17;
 		G_B9_1 = G_B8_0;
@@ -27804,7 +27770,7 @@ IL_003c:
 
 IL_0042:
 	{
-		bool4_tCEC5DC2AFA83CFCFFFD886434359A9A19056A619 L_18 = ___c2;
+		bool4_tCEC5DC2AFA83CFCFFFD886434359A9A19056A619 L_18 = ___test2;
 		bool L_19 = L_18.___w_3;
 		G_B10_0 = G_B9_0;
 		G_B10_1 = G_B9_1;
@@ -27818,7 +27784,7 @@ IL_0042:
 		}
 	}
 	{
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_20 = ___a0;
+		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_20 = ___falseValue0;
 		float L_21 = L_20.___w_3;
 		G_B12_0 = L_21;
 		G_B12_1 = G_B10_0;
@@ -27829,7 +27795,7 @@ IL_0042:
 
 IL_0052:
 	{
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_22 = ___b1;
+		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_22 = ___trueValue1;
 		float L_23 = L_22.___w_3;
 		G_B12_0 = L_23;
 		G_B12_1 = G_B11_0;
@@ -30742,26 +30708,9 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint4_t6C69CBFAE9BF0F727D52B68779
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 math_asuint_mDF3C61EF6F9D9D10A1D3EB9D0075149707B461B9_inline (float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___x0, const RuntimeMethod* method) 
 {
 	{
-		// public static uint4 asuint(float4 x) { return uint4(asuint(x.x), asuint(x.y), asuint(x.z), asuint(x.w)); }
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_0 = ___x0;
-		float L_1 = L_0.___x_0;
-		uint32_t L_2;
-		L_2 = math_asuint_m503D1ABF19E4BA615FD8AE1BF1A2E103BBED6139_inline(L_1, NULL);
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_3 = ___x0;
-		float L_4 = L_3.___y_1;
-		uint32_t L_5;
-		L_5 = math_asuint_m503D1ABF19E4BA615FD8AE1BF1A2E103BBED6139_inline(L_4, NULL);
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_6 = ___x0;
-		float L_7 = L_6.___z_2;
-		uint32_t L_8;
-		L_8 = math_asuint_m503D1ABF19E4BA615FD8AE1BF1A2E103BBED6139_inline(L_7, NULL);
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_9 = ___x0;
-		float L_10 = L_9.___w_3;
-		uint32_t L_11;
-		L_11 = math_asuint_m503D1ABF19E4BA615FD8AE1BF1A2E103BBED6139_inline(L_10, NULL);
-		uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 L_12;
-		L_12 = math_uint4_m7F6A5341327B9EF6B80C82FD1B93E4F32287A336_inline(L_2, L_5, L_8, L_11, NULL);
-		return L_12;
+		// return *(uint4*)&x;
+		uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 L_0 = (*(uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9*)((uintptr_t)(&___x0)));
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 uint4_op_ExclusiveOr_m5B57FB4F864B88CB06B4949AA275A70D02BF7889_inline (uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 ___lhs0, uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 ___rhs1, const RuntimeMethod* method) 
@@ -30819,26 +30768,9 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint4_t6C69CBFAE9BF0F727D52B68779
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E math_asfloat_m12607D976A0CF76E07E41340262CAEC45A9CB537_inline (uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 ___x0, const RuntimeMethod* method) 
 {
 	{
-		// public static float4 asfloat(uint4 x) { return float4(asfloat(x.x), asfloat(x.y), asfloat(x.z), asfloat(x.w)); }
-		uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 L_0 = ___x0;
-		uint32_t L_1 = L_0.___x_0;
-		float L_2;
-		L_2 = math_asfloat_m20D259DAAB46464B59BD8BF5678F9D59800F70A9_inline(L_1, NULL);
-		uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 L_3 = ___x0;
-		uint32_t L_4 = L_3.___y_1;
-		float L_5;
-		L_5 = math_asfloat_m20D259DAAB46464B59BD8BF5678F9D59800F70A9_inline(L_4, NULL);
-		uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 L_6 = ___x0;
-		uint32_t L_7 = L_6.___z_2;
-		float L_8;
-		L_8 = math_asfloat_m20D259DAAB46464B59BD8BF5678F9D59800F70A9_inline(L_7, NULL);
-		uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 L_9 = ___x0;
-		uint32_t L_10 = L_9.___w_3;
-		float L_11;
-		L_11 = math_asfloat_m20D259DAAB46464B59BD8BF5678F9D59800F70A9_inline(L_10, NULL);
-		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_12;
-		L_12 = math_float4_m16697C284FA0C25A84F3DC3E99F3D4C306B6BFBF_inline(L_2, L_5, L_8, L_11, NULL);
-		return L_12;
+		// return *(float4*)&x;
+		float4_t89D9A294E7A79BD81BFBDD18654508532958555E L_0 = (*(float4_t89D9A294E7A79BD81BFBDD18654508532958555E*)((uintptr_t)(&___x0)));
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float4_t89D9A294E7A79BD81BFBDD18654508532958555E math_float4_m16697C284FA0C25A84F3DC3E99F3D4C306B6BFBF_inline (float ___x0, float ___y1, float ___z2, float ___w3, const RuntimeMethod* method) 
@@ -31753,26 +31685,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void uint4__ctor_m59B6A219A0285C6
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_asuint_m503D1ABF19E4BA615FD8AE1BF1A2E103BBED6139_inline (float ___x0, const RuntimeMethod* method) 
-{
-	{
-		// public static uint asuint(float x) { return (uint)asint(x); }
-		float L_0 = ___x0;
-		int32_t L_1;
-		L_1 = math_asint_mBDED7FE966CA65F6A8ACEAEF8FD779B1B8998288_inline(L_0, NULL);
-		return L_1;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m20D259DAAB46464B59BD8BF5678F9D59800F70A9_inline (uint32_t ___x0, const RuntimeMethod* method) 
-{
-	{
-		// public static float  asfloat(uint x) { return asfloat((int)x); }
-		uint32_t L_0 = ___x0;
-		float L_1;
-		L_1 = math_asfloat_m9FA56DE5C61FCEF3DCD0675252D40DFD9C9B712F_inline(L_0, NULL);
-		return L_1;
-	}
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E math_sin_m43618973AB0574A29896B4479E1F72A829644A33_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___x0, const RuntimeMethod* method) 
 {
 	{
@@ -31902,57 +31814,41 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3x3_tB318DB8C7E54B6CA9E14EB9
 		return L_3;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_select_m8BBDC6133225059EE5F0FCA74BA9497AD5496024_inline (uint32_t ___a0, uint32_t ___b1, bool ___c2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_select_m8BBDC6133225059EE5F0FCA74BA9497AD5496024_inline (uint32_t ___falseValue0, uint32_t ___trueValue1, bool ___test2, const RuntimeMethod* method) 
 {
 	{
-		// public static uint select(uint a, uint b, bool c) { return c ? b : a; }
-		bool L_0 = ___c2;
+		// public static uint select(uint falseValue, uint trueValue, bool test) { return test ? trueValue : falseValue; }
+		bool L_0 = ___test2;
 		if (L_0)
 		{
 			goto IL_0005;
 		}
 	}
 	{
-		uint32_t L_1 = ___a0;
+		uint32_t L_1 = ___falseValue0;
 		return L_1;
 	}
 
 IL_0005:
 	{
-		uint32_t L_2 = ___b1;
+		uint32_t L_2 = ___trueValue1;
 		return L_2;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t math_asint_mBDED7FE966CA65F6A8ACEAEF8FD779B1B8998288_inline (float ___x0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m20D259DAAB46464B59BD8BF5678F9D59800F70A9_inline (uint32_t ___x0, const RuntimeMethod* method) 
 {
-	IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 V_0;
-	memset((&V_0), 0, sizeof(V_0));
 	{
-		// u.intValue = 0;
-		(&V_0)->___intValue_0 = 0;
-		// u.floatValue = x;
-		float L_0 = ___x0;
-		(&V_0)->___floatValue_1 = L_0;
-		// return u.intValue;
-		IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 L_1 = V_0;
-		int32_t L_2 = L_1.___intValue_0;
-		return L_2;
+		// return *(float*)&x;
+		float L_0 = *((float*)((uintptr_t)(&___x0)));
+		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m9FA56DE5C61FCEF3DCD0675252D40DFD9C9B712F_inline (int32_t ___x0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_asuint_m503D1ABF19E4BA615FD8AE1BF1A2E103BBED6139_inline (float ___x0, const RuntimeMethod* method) 
 {
-	IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 V_0;
-	memset((&V_0), 0, sizeof(V_0));
 	{
-		// u.floatValue = 0;
-		(&V_0)->___floatValue_1 = (0.0f);
-		// u.intValue = x;
-		int32_t L_0 = ___x0;
-		(&V_0)->___intValue_0 = L_0;
-		// return u.floatValue;
-		IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 L_1 = V_0;
-		float L_2 = L_1.___floatValue_1;
-		return L_2;
+		// return *(uint*)&x;
+		int32_t L_0 = *((uint32_t*)((uintptr_t)(&___x0)));
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_sqrt_mEF31DE7BD0179009683C5D7B0C58E6571B30CF4A_inline (float ___x0, const RuntimeMethod* method) 

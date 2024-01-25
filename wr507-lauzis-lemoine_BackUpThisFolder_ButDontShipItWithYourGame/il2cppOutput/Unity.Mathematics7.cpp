@@ -405,36 +405,6 @@ struct uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9_StaticFields
 	uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9 ___zero_4;
 };
 
-// Unity.Mathematics.math/IntFloatUnion
-struct IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 
-{
-	union
-	{
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.Int32 Unity.Mathematics.math/IntFloatUnion::intValue
-			int32_t ___intValue_0;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			int32_t ___intValue_0_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.Single Unity.Mathematics.math/IntFloatUnion::floatValue
-			float ___floatValue_1;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			float ___floatValue_1_forAlignmentOnly;
-		};
-	};
-};
-
 // Unity.Mathematics.bool2x2
 struct bool2x2_tC3EDF9F32254E780BD206037ECB81EDD1A6CF162 
 {
@@ -2094,11 +2064,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int2_tF4AC25F87943DC0B2BB3456B0B9
 // System.Void Unity.Mathematics.int2x2::.ctor(System.Int32)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void int2x2__ctor_mD2C84FF49E2D54425DF8A84F75BF6021574E8F04_inline (int2x2_t17F286A5630F71C04FD8E0EE638511920632F96C* __this, int32_t ___v0, const RuntimeMethod* method) ;
 // Unity.Mathematics.int2 Unity.Mathematics.math::select(Unity.Mathematics.int2,Unity.Mathematics.int2,System.Boolean)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A math_select_m78EA2ADC92CCEE743AC2ECF2BFAD596BC89386BD_inline (int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___a0, int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___b1, bool ___c2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A math_select_m78EA2ADC92CCEE743AC2ECF2BFAD596BC89386BD_inline (int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___falseValue0, int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___trueValue1, bool ___test2, const RuntimeMethod* method) ;
 // System.Void Unity.Mathematics.int2x2::.ctor(System.Boolean)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void int2x2__ctor_mBD60EBA2968BD0DCE7A9F056070B49BF2199627D_inline (int2x2_t17F286A5630F71C04FD8E0EE638511920632F96C* __this, bool ___v0, const RuntimeMethod* method) ;
 // Unity.Mathematics.int2 Unity.Mathematics.math::select(Unity.Mathematics.int2,Unity.Mathematics.int2,Unity.Mathematics.bool2)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A math_select_mCA95BA9D3EF5479FD8B03635D5A2FA9FF6DCA8C4_inline (int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___a0, int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___b1, bool2_t8DE096059E01F7B763971F8CA11E746D41DC8611 ___c2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A math_select_mCA95BA9D3EF5479FD8B03635D5A2FA9FF6DCA8C4_inline (int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___falseValue0, int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___trueValue1, bool2_t8DE096059E01F7B763971F8CA11E746D41DC8611 ___test2, const RuntimeMethod* method) ;
 // System.Void Unity.Mathematics.int2x2::.ctor(Unity.Mathematics.bool2x2)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void int2x2__ctor_m4B9E840C8FE0E3C9A866546E0C1895733C8ADF8B_inline (int2x2_t17F286A5630F71C04FD8E0EE638511920632F96C* __this, bool2x2_tC3EDF9F32254E780BD206037ECB81EDD1A6CF162 ___v0, const RuntimeMethod* method) ;
 // Unity.Mathematics.int2 Unity.Mathematics.int2::op_Explicit(System.UInt32)
@@ -2284,7 +2254,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m20D259DAAB464
 // System.Single Unity.Mathematics.math::min(System.Single,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_min_m54FD010BEF505D2BA1F79FC793BEB0723C329C3B_inline (float ___x0, float ___y1, const RuntimeMethod* method) ;
 // System.UInt32 Unity.Mathematics.math::select(System.UInt32,System.UInt32,System.Boolean)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_select_m8BBDC6133225059EE5F0FCA74BA9497AD5496024_inline (uint32_t ___a0, uint32_t ___b1, bool ___c2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_select_m8BBDC6133225059EE5F0FCA74BA9497AD5496024_inline (uint32_t ___falseValue0, uint32_t ___trueValue1, bool ___test2, const RuntimeMethod* method) ;
 // Unity.Mathematics.uint2 Unity.Mathematics.math::uint2(System.UInt32,System.UInt32)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F math_uint2_m861F5F74EBBBD3DA19E84A1155320B89FF7341C3_inline (uint32_t ___x0, uint32_t ___y1, const RuntimeMethod* method) ;
 // Unity.Mathematics.uint2 Unity.Mathematics.uint2::op_Multiply(Unity.Mathematics.uint2,Unity.Mathematics.uint2)
@@ -2307,10 +2277,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_csum_m6A99E69A84442
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F math_asuint_m64DA623C5CFEB8445663480384F2B1C202150EE5_inline (int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___x0, const RuntimeMethod* method) ;
 // Unity.Mathematics.uint2 Unity.Mathematics.uint2::op_Addition(Unity.Mathematics.uint2,Unity.Mathematics.uint2)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F uint2_op_Addition_m208A269559B52DBA5098C871B450E3AC857A1E4E_inline (uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F ___lhs0, uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F ___rhs1, const RuntimeMethod* method) ;
-// System.Int32 Unity.Mathematics.math::asint(System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t math_asint_mBDED7FE966CA65F6A8ACEAEF8FD779B1B8998288_inline (float ___x0, const RuntimeMethod* method) ;
-// System.Single Unity.Mathematics.math::asfloat(System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m9FA56DE5C61FCEF3DCD0675252D40DFD9C9B712F_inline (int32_t ___x0, const RuntimeMethod* method) ;
 // System.Boolean System.Single::IsNaN(System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Single_IsNaN_mFE637F6ECA9F7697CE8EFF56427858F4C5EDF75D_inline (float ___f0, const RuntimeMethod* method) ;
 // System.Void Unity.Mathematics.uint2::.ctor(System.UInt32,System.UInt32)
@@ -34676,24 +34642,24 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void int2x2__ctor_mD2C84FF49E2D54
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A math_select_m78EA2ADC92CCEE743AC2ECF2BFAD596BC89386BD_inline (int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___a0, int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___b1, bool ___c2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A math_select_m78EA2ADC92CCEE743AC2ECF2BFAD596BC89386BD_inline (int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___falseValue0, int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___trueValue1, bool ___test2, const RuntimeMethod* method) 
 {
 	{
-		// public static int2 select(int2 a, int2 b, bool c) { return c ? b : a; }
-		bool L_0 = ___c2;
+		// public static int2 select(int2 falseValue, int2 trueValue, bool test) { return test ? trueValue : falseValue; }
+		bool L_0 = ___test2;
 		if (L_0)
 		{
 			goto IL_0005;
 		}
 	}
 	{
-		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_1 = ___a0;
+		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_1 = ___falseValue0;
 		return L_1;
 	}
 
 IL_0005:
 	{
-		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_2 = ___b1;
+		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_2 = ___trueValue1;
 		return L_2;
 	}
 }
@@ -34726,7 +34692,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void int2x2__ctor_mBD60EBA2968BD0
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A math_select_mCA95BA9D3EF5479FD8B03635D5A2FA9FF6DCA8C4_inline (int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___a0, int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___b1, bool2_t8DE096059E01F7B763971F8CA11E746D41DC8611 ___c2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A math_select_mCA95BA9D3EF5479FD8B03635D5A2FA9FF6DCA8C4_inline (int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___falseValue0, int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___trueValue1, bool2_t8DE096059E01F7B763971F8CA11E746D41DC8611 ___test2, const RuntimeMethod* method) 
 {
 	int32_t G_B3_0 = 0;
 	int32_t G_B5_0 = 0;
@@ -34734,8 +34700,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int2_tF4AC25F87943DC0B2BB3456B0B9
 	int32_t G_B6_0 = 0;
 	int32_t G_B6_1 = 0;
 	{
-		// public static int2 select(int2 a, int2 b, bool2 c) { return new int2(c.x ? b.x : a.x, c.y ? b.y : a.y); }
-		bool2_t8DE096059E01F7B763971F8CA11E746D41DC8611 L_0 = ___c2;
+		// public static int2 select(int2 falseValue, int2 trueValue, bool2 test) { return new int2(test.x ? trueValue.x : falseValue.x, test.y ? trueValue.y : falseValue.y); }
+		bool2_t8DE096059E01F7B763971F8CA11E746D41DC8611 L_0 = ___test2;
 		bool L_1 = L_0.___x_0;
 		if (L_1)
 		{
@@ -34743,7 +34709,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int2_tF4AC25F87943DC0B2BB3456B0B9
 		}
 	}
 	{
-		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_2 = ___a0;
+		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_2 = ___falseValue0;
 		int32_t L_3 = L_2.___x_0;
 		G_B3_0 = L_3;
 		goto IL_0016;
@@ -34751,14 +34717,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int2_tF4AC25F87943DC0B2BB3456B0B9
 
 IL_0010:
 	{
-		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_4 = ___b1;
+		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_4 = ___trueValue1;
 		int32_t L_5 = L_4.___x_0;
 		G_B3_0 = L_5;
 	}
 
 IL_0016:
 	{
-		bool2_t8DE096059E01F7B763971F8CA11E746D41DC8611 L_6 = ___c2;
+		bool2_t8DE096059E01F7B763971F8CA11E746D41DC8611 L_6 = ___test2;
 		bool L_7 = L_6.___y_1;
 		G_B4_0 = G_B3_0;
 		if (L_7)
@@ -34768,7 +34734,7 @@ IL_0016:
 		}
 	}
 	{
-		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_8 = ___a0;
+		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_8 = ___falseValue0;
 		int32_t L_9 = L_8.___y_1;
 		G_B6_0 = L_9;
 		G_B6_1 = G_B4_0;
@@ -34777,7 +34743,7 @@ IL_0016:
 
 IL_0026:
 	{
-		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_10 = ___b1;
+		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_10 = ___trueValue1;
 		int32_t L_11 = L_10.___y_1;
 		G_B6_0 = L_11;
 		G_B6_1 = G_B5_0;
@@ -36546,21 +36512,17 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* int2x3_ToString_mF8BDC4
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_asuint_m503D1ABF19E4BA615FD8AE1BF1A2E103BBED6139_inline (float ___x0, const RuntimeMethod* method) 
 {
 	{
-		// public static uint asuint(float x) { return (uint)asint(x); }
-		float L_0 = ___x0;
-		int32_t L_1;
-		L_1 = math_asint_mBDED7FE966CA65F6A8ACEAEF8FD779B1B8998288_inline(L_0, NULL);
-		return L_1;
+		// return *(uint*)&x;
+		int32_t L_0 = *((uint32_t*)((uintptr_t)(&___x0)));
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m20D259DAAB46464B59BD8BF5678F9D59800F70A9_inline (uint32_t ___x0, const RuntimeMethod* method) 
 {
 	{
-		// public static float  asfloat(uint x) { return asfloat((int)x); }
-		uint32_t L_0 = ___x0;
-		float L_1;
-		L_1 = math_asfloat_m9FA56DE5C61FCEF3DCD0675252D40DFD9C9B712F_inline(L_0, NULL);
-		return L_1;
+		// return *(float*)&x;
+		float L_0 = *((float*)((uintptr_t)(&___x0)));
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_min_m54FD010BEF505D2BA1F79FC793BEB0723C329C3B_inline (float ___x0, float ___y1, const RuntimeMethod* method) 
@@ -36594,24 +36556,24 @@ IL_000e:
 		return L_5;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_select_m8BBDC6133225059EE5F0FCA74BA9497AD5496024_inline (uint32_t ___a0, uint32_t ___b1, bool ___c2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_select_m8BBDC6133225059EE5F0FCA74BA9497AD5496024_inline (uint32_t ___falseValue0, uint32_t ___trueValue1, bool ___test2, const RuntimeMethod* method) 
 {
 	{
-		// public static uint select(uint a, uint b, bool c) { return c ? b : a; }
-		bool L_0 = ___c2;
+		// public static uint select(uint falseValue, uint trueValue, bool test) { return test ? trueValue : falseValue; }
+		bool L_0 = ___test2;
 		if (L_0)
 		{
 			goto IL_0005;
 		}
 	}
 	{
-		uint32_t L_1 = ___a0;
+		uint32_t L_1 = ___falseValue0;
 		return L_1;
 	}
 
 IL_0005:
 	{
-		uint32_t L_2 = ___b1;
+		uint32_t L_2 = ___trueValue1;
 		return L_2;
 	}
 }
@@ -36762,14 +36724,9 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_csum_m6A99E69A84442
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F math_asuint_m64DA623C5CFEB8445663480384F2B1C202150EE5_inline (int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A ___x0, const RuntimeMethod* method) 
 {
 	{
-		// public static uint2 asuint(int2 x) { return uint2((uint)x.x, (uint)x.y); }
-		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_0 = ___x0;
-		int32_t L_1 = L_0.___x_0;
-		int2_tF4AC25F87943DC0B2BB3456B0B919B3B42A9432A L_2 = ___x0;
-		int32_t L_3 = L_2.___y_1;
-		uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F L_4;
-		L_4 = math_uint2_m861F5F74EBBBD3DA19E84A1155320B89FF7341C3_inline(L_1, L_3, NULL);
-		return L_4;
+		// return *(uint2*)&x;
+		uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F L_0 = (*(uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F*)((uintptr_t)(&___x0)));
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F uint2_op_Addition_m208A269559B52DBA5098C871B450E3AC857A1E4E_inline (uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F ___lhs0, uint2_t157753816C23B82EB918C3D3AFCFDDE06A04C05F ___rhs1, const RuntimeMethod* method) 
@@ -36788,38 +36745,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint2_t157753816C23B82EB918C3D3AF
 		memset((&L_8), 0, sizeof(L_8));
 		uint2__ctor_mDE945EFF54FDA16335AC19E9E01A9BAE161B8D3F_inline((&L_8), ((int32_t)il2cpp_codegen_add((int32_t)L_1, (int32_t)L_3)), ((int32_t)il2cpp_codegen_add((int32_t)L_5, (int32_t)L_7)), /*hidden argument*/NULL);
 		return L_8;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t math_asint_mBDED7FE966CA65F6A8ACEAEF8FD779B1B8998288_inline (float ___x0, const RuntimeMethod* method) 
-{
-	IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		// u.intValue = 0;
-		(&V_0)->___intValue_0 = 0;
-		// u.floatValue = x;
-		float L_0 = ___x0;
-		(&V_0)->___floatValue_1 = L_0;
-		// return u.intValue;
-		IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 L_1 = V_0;
-		int32_t L_2 = L_1.___intValue_0;
-		return L_2;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m9FA56DE5C61FCEF3DCD0675252D40DFD9C9B712F_inline (int32_t ___x0, const RuntimeMethod* method) 
-{
-	IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		// u.floatValue = 0;
-		(&V_0)->___floatValue_1 = (0.0f);
-		// u.intValue = x;
-		int32_t L_0 = ___x0;
-		(&V_0)->___intValue_0 = L_0;
-		// return u.floatValue;
-		IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 L_1 = V_0;
-		float L_2 = L_1.___floatValue_1;
-		return L_2;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Single_IsNaN_mFE637F6ECA9F7697CE8EFF56427858F4C5EDF75D_inline (float ___f0, const RuntimeMethod* method) 

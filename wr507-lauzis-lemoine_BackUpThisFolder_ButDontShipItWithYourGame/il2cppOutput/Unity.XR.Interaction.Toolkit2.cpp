@@ -152,6 +152,28 @@ struct InterfaceFuncInvoker1
 		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
 	}
 };
+template <typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8, typename T9, typename T10>
+struct InvokerActionInvoker10;
+template <typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8, typename T9, typename T10>
+struct InvokerActionInvoker10<T1*, T2*, T3*, T4, T5, T6, T7, T8, T9, T10*>
+{
+	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1* p1, T2* p2, T3* p3, T4 p4, T5 p5, T6 p6, T7 p7, T8 p8, T9 p9, T10* p10)
+	{
+		void* params[10] = { p1, p2, p3, &p4, &p5, &p6, &p7, &p8, &p9, p10 };
+		method->invoker_method(methodPtr, method, obj, params, NULL);
+	}
+};
+template <typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8, typename T9, typename T10, typename T11>
+struct InvokerActionInvoker11;
+template <typename T1, typename T2, typename T3, typename T4, typename T5, typename T6, typename T7, typename T8, typename T9, typename T10, typename T11>
+struct InvokerActionInvoker11<T1*, T2*, T3*, T4*, T5, T6, T7, T8, T9, T10, T11*>
+{
+	static inline void Invoke (Il2CppMethodPointer methodPtr, const RuntimeMethod* method, void* obj, T1* p1, T2* p2, T3* p3, T4* p4, T5 p5, T6 p6, T7 p7, T8 p8, T9 p9, T10 p10, T11* p11)
+	{
+		void* params[11] = { p1, p2, p3, p4, &p5, &p6, &p7, &p8, &p9, &p10, p11 };
+		method->invoker_method(methodPtr, method, obj, params, NULL);
+	}
+};
 
 // System.Action`1<System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.IXRTargetPriorityInteractor>>
 struct Action_1_t2F0A18E4E17928DA93FC30BCF011D27EF1097942;
@@ -629,6 +651,8 @@ struct AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354;
 struct Animator_t8A52E42AE54F76681838FE9E632683EF3952E883;
 // System.ArgumentNullException
 struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129;
+// System.AsyncCallback
+struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
 // UnityEngine.AudioClip
 struct AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20;
 // UnityEngine.AudioSource
@@ -713,6 +737,8 @@ struct HoverExitEvent_t256704BC79FE0AA61EB2DE3FDDF43A1FC97F5832;
 struct HoverExitEventArgs_tFFBECDDAF90BF90AA3B7282FAEF1D8E5D19A5AD6;
 // UnityEngine.XR.Interaction.Toolkit.IAdvancedLineRenderable
 struct IAdvancedLineRenderable_t915180BDFB27DDFD93D5DF170B0E340BF9119F87;
+// System.IAsyncResult
+struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
 // System.Collections.IDictionary
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 // System.Collections.IEnumerator
@@ -885,6 +911,8 @@ struct XRSocketGrabTransformer_t41575EF04DFE617ABB4C826F5A79D07CEE0500AD;
 struct XRSocketInteractor_t955B5778E5057E61463018DC1817B84363C54591;
 // UnityEngine.Camera/CameraCallback
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
+// UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$PostfixBurstDelegate
+struct GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C;
 // UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/InteractorData
 struct InteractorData_t995D51F2EB54212DC9AFE8293E758A386134A3CF;
 // UnityEngine.XR.Interaction.Toolkit.XRInteractionManager/<>c
@@ -909,6 +937,7 @@ IL2CPP_EXTERN_C RuntimeClass* Action_1_tCB862C932EAF49C2968D3AD96CEDF6D2DFED41F0
 IL2CPP_EXTERN_C RuntimeClass* Action_1_tF1EFD363206113AB62CC79E4ABC28A4901B693B7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BurstCompiler_t2715484E1FF256726FC4D4D8E17C35A4C8DFA2B8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ClimbSettingsDatumProperty_t0D62A4D5C67E461387798B2FFD7765E56D7FD36F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ClimbSettings_t6AB6E4838282F7838D9BAD494527A95D1F0C556F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_il2cpp_TypeInfo_var;
@@ -938,6 +967,7 @@ IL2CPP_EXTERN_C RuntimeClass* Func_1_tC1361D7E4223ADA8FB472118DCE811CFCDD2775B_i
 IL2CPP_EXTERN_C RuntimeClass* Func_1_tC195DD40D33A78EE5375770CA556EE4B92F20577_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Func_1_tD457833E73C82C42CC7E7E9AAFC85AC1704E0E62_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Graphics_t99CD970FFEA58171C70F54DF0C06D315BD452F2C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HashSetList_1_t9B99CC0926626355B318B6ECFADDC931FBB7D325_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HashSet_1_t109CCE87260348881F7ED50EEE3FFD003542DC8B_il2cpp_TypeInfo_var;
@@ -1348,6 +1378,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1__ctor_mD2633EF820530931EAF2FB2
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1__ctor_mF55C58688D34DDA5177764806B2CCEB5F28FAE0F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueCollection_GetEnumerator_m10787914922B54D75C3AD0F08C1CFC74085562A1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ValueTuple_2__ctor_m2C3EE4A08C8ED5E13FECEDBF154D2181CB0371E2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* XRGazeAssistance_GetAssistedVelocityInternalU24BurstManaged_mED76D1E4ACFD143B2354243B21C0B9207ED19819_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* XRGazeAssistance_GetAssistedVelocityInternal_m42C430A825A47BB162F461025C038148CE2F6B1F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* XRGazeAssistance_OnBeforeRender_mBB35CCB67A59BB111CF997CA80B8F7EFAF226EF7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* XRInteractionManager_GetOfType_TisIXRInteractable_t31CD4FF4D45899471D81D43D605D9C6118BF50CA_TisXRBaseInteractable_tC2C966C710AE6AC232E248B1BCF323386110D0F6_m0C7476ABD4667CF1DD25341C45CB37210FDD3446_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* XRInteractionManager_GetOfType_TisIXRInteractor_t0E1112913D56F678962B999BA5CC139CFE0D344A_TisXRBaseInteractor_tB48889E8D95695ABF46D2012EC55EA660103D158_mEB9580D4123F8767F228A130DD644CD0DAEA3CD3_RuntimeMethod_var;
@@ -1359,6 +1391,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* XRSocketInteractor_OnContactAdded_mFB269878
 IL2CPP_EXTERN_C const RuntimeMethod* XRSocketInteractor_OnContactRemoved_mB0529B0AAE3A02A975B24614DBC21B379CB23CAD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* XRSocketInteractor_OnInteractableRegistered_m9F6CFAEE4375AFD39BB7E6118FDD5A1D35A89C57_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* XRSocketInteractor_OnInteractableUnregistered_m8B22001876BF4F03AC42C85F5B0E5E13E9A8A602_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C_0_0_0_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -1366,6 +1399,7 @@ struct Exception_t_marshaled_pinvoke;
 
 struct InputFeatureUsage_1U5BU5D_t70BB6C9773E825D79E0D241D4C351891E40E3B91;
 struct ValueTuple_2U5BU5D_t842DC716B14D625F1C9F5082427C20FC98F6C0AD;
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
@@ -3839,36 +3873,6 @@ struct ShaderPropertyLookup_tDED6B46E2CC5F6076041E9EC797B27498F4EAE60_StaticFiel
 	int32_t ___color_6;
 };
 
-// Unity.Mathematics.math/IntFloatUnion
-struct IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 
-{
-	union
-	{
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.Int32 Unity.Mathematics.math/IntFloatUnion::intValue
-			int32_t ___intValue_0;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			int32_t ___intValue_0_forAlignmentOnly;
-		};
-		#pragma pack(push, tp, 1)
-		struct
-		{
-			// System.Single Unity.Mathematics.math/IntFloatUnion::floatValue
-			float ___floatValue_1;
-		};
-		#pragma pack(pop, tp)
-		struct
-		{
-			float ___floatValue_1_forAlignmentOnly;
-		};
-	};
-};
-
 // UnityEngine.InputSystem.Utilities.CallbackArray`1<System.Action`1<UnityEngine.InputSystem.InputAction/CallbackContext>>
 struct CallbackArray_1_tDFF8C4C6015023B6C2E70BAD26D8BC6BF00D8775 
 {
@@ -4372,6 +4376,20 @@ struct RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023_marshaled_com
 	int32_t ___displayIndex_10;
 };
 
+// System.RuntimeMethodHandle
+struct RuntimeMethodHandle_tB35B96E97214DCBE20B0B02B1E687884B34680B2 
+{
+	// System.IntPtr System.RuntimeMethodHandle::value
+	intptr_t ___value_0;
+};
+
+// System.RuntimeTypeHandle
+struct RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B 
+{
+	// System.IntPtr System.RuntimeTypeHandle::value
+	intptr_t ___value_0;
+};
+
 // UnityEngine.XR.Interaction.Toolkit.SelectEnterEvent
 struct SelectEnterEvent_tBA2614C8C25D8794D5804C4F66195D74E64FC5D0  : public UnityEvent_1_t8C99CC340A51BB1718EAC4102D4F90EE78F667F8
 {
@@ -4436,6 +4454,19 @@ struct AutoScope_tFB983697E28885CB10FFDB92D7EFD0615AEF3139
 {
 	// System.IntPtr Unity.Profiling.ProfilerMarker/AutoScope::m_Ptr
 	intptr_t ___m_Ptr_0;
+};
+
+// UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$BurstDirectCall
+struct GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839  : public RuntimeObject
+{
+};
+
+struct GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_StaticFields
+{
+	// System.IntPtr UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$BurstDirectCall::Pointer
+	intptr_t ___Pointer_0;
+	// System.IntPtr UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$BurstDirectCall::DeferredCompilation
+	intptr_t ___DeferredCompilation_1;
 };
 
 // UnityEngine.XR.Interaction.Toolkit.XRRayInteractor/SamplePoint
@@ -4720,6 +4751,11 @@ struct ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263  : public Sys
 	String_t* ____paramName_18;
 };
 
+// System.AsyncCallback
+struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C  : public MulticastDelegate_t
+{
+};
+
 // UnityEngine.Behaviour
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
@@ -4772,6 +4808,11 @@ struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t
 
 // UnityEngine.Events.UnityAction
 struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7  : public MulticastDelegate_t
+{
+};
+
+// UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$PostfixBurstDelegate
+struct GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C  : public MulticastDelegate_t
 {
 };
 
@@ -6438,6 +6479,41 @@ struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeA
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
+// System.Delegate[]
+struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Delegate_t* m_Items[1];
+
+	inline Delegate_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Delegate_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Delegate_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Delegate_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Delegate_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Delegate_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 // UnityEngine.XR.InputFeatureUsage`1<UnityEngine.Vector2>[]
 struct InputFeatureUsage_1U5BU5D_t70BB6C9773E825D79E0D241D4C351891E40E3B91  : public RuntimeArray
 {
@@ -7245,6 +7321,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractorData_UpdateLineVisualOrigin_m8
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 XRRayInteractor_get_rayEndPoint_mAE3C84F9C16D28D427133A7377E21293FD64222D_inline (XRRayInteractor_t0B25C1D5A938B199A71908E189AB351B43DA4C76* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance::GetAssistedVelocityInternal(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,UnityEngine.Vector3&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRGazeAssistance_GetAssistedVelocityInternal_m42C430A825A47BB162F461025C038148CE2F6B1F (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, const RuntimeMethod* method) ;
+// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$BurstDirectCall::Invoke(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,UnityEngine.Vector3&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAssistedVelocityInternal_00000690U24BurstDirectCall_Invoke_mEA4AC92EBEC4DD43692277CE55A0FE811487CBB6 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/InteractorData>::.ctor()
+inline void List_1__ctor_m4C8918AA31DDFEBB15501CE4E42E60DD4E4440C0 (List_1_t70D4271F84A8A73432DC19966E47A87E078EEFEF* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t70D4271F84A8A73432DC19966E47A87E078EEFEF*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Void UnityEngine.MonoBehaviour::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+// UnityEngine.Vector3 UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance::GetAssistedVelocity(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 XRGazeAssistance_GetAssistedVelocity_mE88AAFD5121C906DFD2107CC2DA85506D38F226A (XRGazeAssistance_t51F96550B1ABB439CA588C417E57BD9B14E3D37A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity1, float ___gravity2, const RuntimeMethod* method) ;
+// UnityEngine.Vector3 UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance::GetAssistedVelocity(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 XRGazeAssistance_GetAssistedVelocity_m882569C73B8141B2F36549F4F880698C6DBE9FD2 (XRGazeAssistance_t51F96550B1ABB439CA588C417E57BD9B14E3D37A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity1, float ___gravity2, float ___maxAngle3, const RuntimeMethod* method) ;
 // System.Single Unity.Mathematics.math::length(Unity.Mathematics.float3)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_length_m6A2B63D7A3B84261C2F7FCAA2CB382288A57D257_inline (float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E ___x0, const RuntimeMethod* method) ;
 // Unity.Mathematics.float3 Unity.Mathematics.math::normalize(Unity.Mathematics.float3)
@@ -7272,18 +7361,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float2_t24AA5C0F612B0672315EDAFEC
 // UnityEngine.Vector3 UnityEngine.Vector3::Slerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Slerp_m6CA14E5B6F6217802BAA0ADD2C9D086C741BA09C (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, float ___t2, const RuntimeMethod* method) ;
 // System.Single Unity.Mathematics.math::lerp(System.Single,System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_lerp_m58A82DB48BBA11871FFA81583C700875B3A9BC84_inline (float ___x0, float ___y1, float ___s2, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/InteractorData>::.ctor()
-inline void List_1__ctor_m4C8918AA31DDFEBB15501CE4E42E60DD4E4440C0 (List_1_t70D4271F84A8A73432DC19966E47A87E078EEFEF* __this, const RuntimeMethod* method)
-{
-	((  void (*) (List_1_t70D4271F84A8A73432DC19966E47A87E078EEFEF*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
-}
-// System.Void UnityEngine.MonoBehaviour::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
-// UnityEngine.Vector3 UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance::GetAssistedVelocity(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 XRGazeAssistance_GetAssistedVelocity_mE88AAFD5121C906DFD2107CC2DA85506D38F226A (XRGazeAssistance_t51F96550B1ABB439CA588C417E57BD9B14E3D37A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity1, float ___gravity2, const RuntimeMethod* method) ;
-// UnityEngine.Vector3 UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance::GetAssistedVelocity(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 XRGazeAssistance_GetAssistedVelocity_m882569C73B8141B2F36549F4F880698C6DBE9FD2 (XRGazeAssistance_t51F96550B1ABB439CA588C417E57BD9B14E3D37A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity1, float ___gravity2, float ___maxAngle3, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_lerp_m58A82DB48BBA11871FFA81583C700875B3A9BC84_inline (float ___start0, float ___end1, float ___t2, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::LogWarning(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
 // System.String UnityEngine.Object::get_name()
@@ -7319,6 +7397,20 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mF0D6
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, float ___t2, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::Lerp(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Lerp_m259606226726C2F46E079A5A688B9E24FF7E9A0D (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___a0, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___b1, float ___t2, const RuntimeMethod* method) ;
+// System.Void* Unity.Burst.BurstCompiler::GetILPPMethodFunctionPointer2(System.IntPtr,System.RuntimeMethodHandle,System.RuntimeTypeHandle)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* BurstCompiler_GetILPPMethodFunctionPointer2_m8C671F61D031A10FC46911AC94B57C1E58D1F567 (intptr_t ___ilppMethod0, RuntimeMethodHandle_tB35B96E97214DCBE20B0B02B1E687884B34680B2 ___managedMethodHandle1, RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ___delegateTypeHandle2, const RuntimeMethod* method) ;
+// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$BurstDirectCall::GetFunctionPointerDiscard(System.IntPtr&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAssistedVelocityInternal_00000690U24BurstDirectCall_GetFunctionPointerDiscard_mC81A24E2637C936688E202CA0F0CF8D8089427C4 (intptr_t* p0, const RuntimeMethod* method) ;
+// System.IntPtr Unity.Burst.BurstCompiler::CompileILPPMethod2(System.RuntimeMethodHandle)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t BurstCompiler_CompileILPPMethod2_m545A8FC57B460871C1715F32DD601F2C1CA9C7FA (RuntimeMethodHandle_tB35B96E97214DCBE20B0B02B1E687884B34680B2 ___burstMethodHandle0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$BurstDirectCall::Constructor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAssistedVelocityInternal_00000690U24BurstDirectCall_Constructor_m5ED062364943C36AD14230E1E379908C55934BB0 (const RuntimeMethod* method) ;
+// System.Boolean Unity.Burst.BurstCompiler::get_IsEnabled()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BurstCompiler_get_IsEnabled_m55FDBCB2279A83AC8926260034F870E3A11116C7 (const RuntimeMethod* method) ;
+// System.IntPtr UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$BurstDirectCall::GetFunctionPointer()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t GetAssistedVelocityInternal_00000690U24BurstDirectCall_GetFunctionPointer_m0CD441347703BE6F439D1C765E5D0DD58B3F4B4F (const RuntimeMethod* method) ;
+// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance::GetAssistedVelocityInternal$BurstManaged(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,UnityEngine.Vector3&)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRGazeAssistance_GetAssistedVelocityInternalU24BurstManaged_mED76D1E4ACFD143B2354243B21C0B9207ED19819_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, const RuntimeMethod* method) ;
 // UnityEngine.XR.Interaction.Toolkit.IXRInteractor UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs::get_interactorObject()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* BaseInteractionEventArgs_get_interactorObject_mDC483F1AAA1267A774B677E14189A3EDD1040864_inline (BaseInteractionEventArgs_t8B38B6C63C6C9EA4BD179EF5FD40106872B82D7E* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs::set_interactorObject(UnityEngine.XR.Interaction.Toolkit.IXRInteractor)
@@ -8935,10 +9027,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFF
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___a0, float ___b1, const RuntimeMethod* method) ;
 // System.Void System.Array::Clear(System.Array,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB (RuntimeArray* ___array0, int32_t ___index1, int32_t ___length2, const RuntimeMethod* method) ;
-// System.Int32 Unity.Mathematics.math::asint(System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t math_asint_mBDED7FE966CA65F6A8ACEAEF8FD779B1B8998288_inline (float ___x0, const RuntimeMethod* method) ;
-// System.Single Unity.Mathematics.math::asfloat(System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m9FA56DE5C61FCEF3DCD0675252D40DFD9C9B712F_inline (int32_t ___x0, const RuntimeMethod* method) ;
 // System.Int32 System.BitConverter::SingleToInt32Bits(System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BitConverter_SingleToInt32Bits_mC760C7CFC89725E3CF68DC45BE3A9A42A7E7DA73_inline (float ___value0, const RuntimeMethod* method) ;
 // System.Void Unity.Profiling.LowLevel.Unsafe.ProfilerUnsafeUtility::BeginSample(System.IntPtr)
@@ -13492,6 +13580,90 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 // System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance::GetAssistedVelocityInternal(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,UnityEngine.Vector3&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRGazeAssistance_GetAssistedVelocityInternal_m42C430A825A47BB162F461025C038148CE2F6B1F (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// var toTarget = (target - source);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___source0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_1 = ___target1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2 = ___velocity2;
+		float L_3 = ___gravity3;
+		float L_4 = ___maxAngle4;
+		float L_5 = ___requiredSpeed5;
+		float L_6 = ___maxSpeedPercent6;
+		float L_7 = ___assistPercent7;
+		float L_8 = ___epsilon8;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_9 = ___adjustedVelocity9;
+		il2cpp_codegen_runtime_class_init_inline(GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var);
+		GetAssistedVelocityInternal_00000690U24BurstDirectCall_Invoke_mEA4AC92EBEC4DD43692277CE55A0FE811487CBB6(L_0, L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, L_9, NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRGazeAssistance__ctor_m8180AC29830104B3AFD515E2110FEFAFBCFCB1D4 (XRGazeAssistance_t51F96550B1ABB439CA588C417E57BD9B14E3D37A* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m4C8918AA31DDFEBB15501CE4E42E60DD4E4440C0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t70D4271F84A8A73432DC19966E47A87E078EEFEF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// float m_FallbackDivergence = 60f;
+		__this->___m_FallbackDivergence_10 = (60.0f);
+		// bool m_HideCursorWithNoActiveRays = true;
+		__this->___m_HideCursorWithNoActiveRays_11 = (bool)1;
+		// List<InteractorData> m_RayInteractors = new List<InteractorData>();
+		List_1_t70D4271F84A8A73432DC19966E47A87E078EEFEF* L_0 = (List_1_t70D4271F84A8A73432DC19966E47A87E078EEFEF*)il2cpp_codegen_object_new(List_1_t70D4271F84A8A73432DC19966E47A87E078EEFEF_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		List_1__ctor_m4C8918AA31DDFEBB15501CE4E42E60DD4E4440C0(L_0, List_1__ctor_m4C8918AA31DDFEBB15501CE4E42E60DD4E4440C0_RuntimeMethod_var);
+		__this->___m_RayInteractors_12 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_RayInteractors_12), (void*)L_0);
+		// float m_AimAssistRequiredAngle = 30f;
+		__this->___m_AimAssistRequiredAngle_13 = (30.0f);
+		// float m_AimAssistRequiredSpeed = 0.25f;
+		__this->___m_AimAssistRequiredSpeed_14 = (0.25f);
+		// float m_AimAssistPercent = 0.8f;
+		__this->___m_AimAssistPercent_15 = (0.800000012f);
+		// float m_AimAssistMaxSpeedPercent = 10f;
+		__this->___m_AimAssistMaxSpeedPercent_16 = (10.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+// UnityEngine.Vector3 UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance::UnityEngine.XR.Interaction.Toolkit.IXRAimAssist.GetAssistedVelocity(UnityEngine.Vector3& modreq(System.Runtime.InteropServices.InAttribute),UnityEngine.Vector3& modreq(System.Runtime.InteropServices.InAttribute),System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 XRGazeAssistance_UnityEngine_XR_Interaction_Toolkit_IXRAimAssist_GetAssistedVelocity_m20DFC783A7EDDD5436AB40DD7283AEF74E1AADC1 (XRGazeAssistance_t51F96550B1ABB439CA588C417E57BD9B14E3D37A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity1, float ___gravity2, const RuntimeMethod* method) 
+{
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___source0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_1 = ___velocity1;
+		float L_2 = ___gravity2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = XRGazeAssistance_GetAssistedVelocity_mE88AAFD5121C906DFD2107CC2DA85506D38F226A(__this, L_0, L_1, L_2, NULL);
+		return L_3;
+	}
+}
+// UnityEngine.Vector3 UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance::UnityEngine.XR.Interaction.Toolkit.IXRAimAssist.GetAssistedVelocity(UnityEngine.Vector3& modreq(System.Runtime.InteropServices.InAttribute),UnityEngine.Vector3& modreq(System.Runtime.InteropServices.InAttribute),System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 XRGazeAssistance_UnityEngine_XR_Interaction_Toolkit_IXRAimAssist_GetAssistedVelocity_mCF56E2E0AF1F5C88DBB696DD31582509F5A2D90F (XRGazeAssistance_t51F96550B1ABB439CA588C417E57BD9B14E3D37A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity1, float ___gravity2, float ___maxAngle3, const RuntimeMethod* method) 
+{
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___source0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_1 = ___velocity1;
+		float L_2 = ___gravity2;
+		float L_3 = ___maxAngle3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = XRGazeAssistance_GetAssistedVelocity_m882569C73B8141B2F36549F4F880698C6DBE9FD2(__this, L_0, L_1, L_2, L_3, NULL);
+		return L_4;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance::GetAssistedVelocityInternal$BurstManaged(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,UnityEngine.Vector3&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRGazeAssistance_GetAssistedVelocityInternalU24BurstManaged_mED76D1E4ACFD143B2354243B21C0B9207ED19819 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, const RuntimeMethod* method) 
+{
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	float V_1 = 0.0f;
@@ -13827,64 +13999,6 @@ IL_01c2:
 		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_110 = L_123;
 		// }
 		return;
-	}
-}
-// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRGazeAssistance__ctor_m8180AC29830104B3AFD515E2110FEFAFBCFCB1D4 (XRGazeAssistance_t51F96550B1ABB439CA588C417E57BD9B14E3D37A* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m4C8918AA31DDFEBB15501CE4E42E60DD4E4440C0_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t70D4271F84A8A73432DC19966E47A87E078EEFEF_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// float m_FallbackDivergence = 60f;
-		__this->___m_FallbackDivergence_10 = (60.0f);
-		// bool m_HideCursorWithNoActiveRays = true;
-		__this->___m_HideCursorWithNoActiveRays_11 = (bool)1;
-		// List<InteractorData> m_RayInteractors = new List<InteractorData>();
-		List_1_t70D4271F84A8A73432DC19966E47A87E078EEFEF* L_0 = (List_1_t70D4271F84A8A73432DC19966E47A87E078EEFEF*)il2cpp_codegen_object_new(List_1_t70D4271F84A8A73432DC19966E47A87E078EEFEF_il2cpp_TypeInfo_var);
-		NullCheck(L_0);
-		List_1__ctor_m4C8918AA31DDFEBB15501CE4E42E60DD4E4440C0(L_0, List_1__ctor_m4C8918AA31DDFEBB15501CE4E42E60DD4E4440C0_RuntimeMethod_var);
-		__this->___m_RayInteractors_12 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_RayInteractors_12), (void*)L_0);
-		// float m_AimAssistRequiredAngle = 30f;
-		__this->___m_AimAssistRequiredAngle_13 = (30.0f);
-		// float m_AimAssistRequiredSpeed = 0.25f;
-		__this->___m_AimAssistRequiredSpeed_14 = (0.25f);
-		// float m_AimAssistPercent = 0.8f;
-		__this->___m_AimAssistPercent_15 = (0.800000012f);
-		// float m_AimAssistMaxSpeedPercent = 10f;
-		__this->___m_AimAssistMaxSpeedPercent_16 = (10.0f);
-		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
-		return;
-	}
-}
-// UnityEngine.Vector3 UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance::UnityEngine.XR.Interaction.Toolkit.IXRAimAssist.GetAssistedVelocity(UnityEngine.Vector3& modreq(System.Runtime.InteropServices.InAttribute),UnityEngine.Vector3& modreq(System.Runtime.InteropServices.InAttribute),System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 XRGazeAssistance_UnityEngine_XR_Interaction_Toolkit_IXRAimAssist_GetAssistedVelocity_m20DFC783A7EDDD5436AB40DD7283AEF74E1AADC1 (XRGazeAssistance_t51F96550B1ABB439CA588C417E57BD9B14E3D37A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity1, float ___gravity2, const RuntimeMethod* method) 
-{
-	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___source0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_1 = ___velocity1;
-		float L_2 = ___gravity2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
-		L_3 = XRGazeAssistance_GetAssistedVelocity_mE88AAFD5121C906DFD2107CC2DA85506D38F226A(__this, L_0, L_1, L_2, NULL);
-		return L_3;
-	}
-}
-// UnityEngine.Vector3 UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance::UnityEngine.XR.Interaction.Toolkit.IXRAimAssist.GetAssistedVelocity(UnityEngine.Vector3& modreq(System.Runtime.InteropServices.InAttribute),UnityEngine.Vector3& modreq(System.Runtime.InteropServices.InAttribute),System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 XRGazeAssistance_UnityEngine_XR_Interaction_Toolkit_IXRAimAssist_GetAssistedVelocity_mCF56E2E0AF1F5C88DBB696DD31582509F5A2D90F (XRGazeAssistance_t51F96550B1ABB439CA588C417E57BD9B14E3D37A* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity1, float ___gravity2, float ___maxAngle3, const RuntimeMethod* method) 
-{
-	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___source0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_1 = ___velocity1;
-		float L_2 = ___gravity2;
-		float L_3 = ___maxAngle3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
-		L_4 = XRGazeAssistance_GetAssistedVelocity_m882569C73B8141B2F36549F4F880698C6DBE9FD2(__this, L_0, L_1, L_2, L_3, NULL);
-		return L_4;
 	}
 }
 #ifdef __clang__
@@ -14739,6 +14853,296 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractorData__ctor_mEBF023CCC7158F02A2
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_Invoke_mB645F9A81F30CF2F44C7360DF8388CFE7916C97F_Multicast(GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C* currentDelegate = reinterpret_cast<GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, float, float, float, float, float, float, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___source0, ___target1, ___velocity2, ___gravity3, ___maxAngle4, ___requiredSpeed5, ___maxSpeedPercent6, ___assistPercent7, ___epsilon8, ___adjustedVelocity9, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_Invoke_mB645F9A81F30CF2F44C7360DF8388CFE7916C97F_OpenInst(GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, float, float, float, float, float, float, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___source0, ___target1, ___velocity2, ___gravity3, ___maxAngle4, ___requiredSpeed5, ___maxSpeedPercent6, ___assistPercent7, ___epsilon8, ___adjustedVelocity9, method);
+}
+void GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_Invoke_mB645F9A81F30CF2F44C7360DF8388CFE7916C97F_OpenStatic(GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, float, float, float, float, float, float, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___source0, ___target1, ___velocity2, ___gravity3, ___maxAngle4, ___requiredSpeed5, ___maxSpeedPercent6, ___assistPercent7, ___epsilon8, ___adjustedVelocity9, method);
+}
+void GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_Invoke_mB645F9A81F30CF2F44C7360DF8388CFE7916C97F_OpenStaticInvoker(GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, const RuntimeMethod* method)
+{
+	InvokerActionInvoker10< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, float, float, float, float, float, float, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* >::Invoke(__this->___method_ptr_0, method, NULL, ___source0, ___target1, ___velocity2, ___gravity3, ___maxAngle4, ___requiredSpeed5, ___maxSpeedPercent6, ___assistPercent7, ___epsilon8, ___adjustedVelocity9);
+}
+void GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_Invoke_mB645F9A81F30CF2F44C7360DF8388CFE7916C97F_ClosedStaticInvoker(GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, const RuntimeMethod* method)
+{
+	InvokerActionInvoker11< RuntimeObject*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, float, float, float, float, float, float, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___source0, ___target1, ___velocity2, ___gravity3, ___maxAngle4, ___requiredSpeed5, ___maxSpeedPercent6, ___assistPercent7, ___epsilon8, ___adjustedVelocity9);
+}
+IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C (GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, const RuntimeMethod* method)
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc)(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, float, float, float, float, float, float, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*);
+	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_reverse_pinvoke_function_ptr(__this));
+	// Native function invocation
+	il2cppPInvokeFunc(___source0, ___target1, ___velocity2, ___gravity3, ___maxAngle4, ___requiredSpeed5, ___maxSpeedPercent6, ___assistPercent7, ___epsilon8, ___adjustedVelocity9);
+
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$PostfixBurstDelegate::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate__ctor_m7E709D04972C2C88F1C35E384449340333423E00 (GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C* __this, RuntimeObject* p0, intptr_t p1, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)p1);
+	__this->___method_3 = p1;
+	__this->___m_target_2 = p0;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)p0);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)p1);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)p1))
+	{
+		bool isOpen = parameterCount == 10;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)p1))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_Invoke_mB645F9A81F30CF2F44C7360DF8388CFE7916C97F_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_Invoke_mB645F9A81F30CF2F44C7360DF8388CFE7916C97F_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_Invoke_mB645F9A81F30CF2F44C7360DF8388CFE7916C97F_OpenStatic;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		bool isOpen = parameterCount == 9;
+		if (isOpen)
+		{
+			__this->___invoke_impl_1 = (intptr_t)&GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_Invoke_mB645F9A81F30CF2F44C7360DF8388CFE7916C97F_OpenInst;
+		}
+		else
+		{
+			if (p0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+		}
+	}
+	__this->___extra_arg_5 = (intptr_t)&GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_Invoke_mB645F9A81F30CF2F44C7360DF8388CFE7916C97F_Multicast;
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$PostfixBurstDelegate::Invoke(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,UnityEngine.Vector3&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_Invoke_mB645F9A81F30CF2F44C7360DF8388CFE7916C97F (GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, float, float, float, float, float, float, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___source0, ___target1, ___velocity2, ___gravity3, ___maxAngle4, ___requiredSpeed5, ___maxSpeedPercent6, ___assistPercent7, ___epsilon8, ___adjustedVelocity9, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+// System.IAsyncResult UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$PostfixBurstDelegate::BeginInvoke(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,UnityEngine.Vector3&,System.AsyncCallback,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_BeginInvoke_m512431B5522F60AA8F6CE0DE34C6A19D021502E6 (GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* p10, RuntimeObject* p11, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[11] = {0};
+	__d_args[0] = Box(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var, &*___source0);
+	__d_args[1] = Box(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var, &*___target1);
+	__d_args[2] = Box(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var, &*___velocity2);
+	__d_args[3] = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &___gravity3);
+	__d_args[4] = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &___maxAngle4);
+	__d_args[5] = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &___requiredSpeed5);
+	__d_args[6] = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &___maxSpeedPercent6);
+	__d_args[7] = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &___assistPercent7);
+	__d_args[8] = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &___epsilon8);
+	__d_args[9] = Box(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var, &*___adjustedVelocity9);
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)p10, (RuntimeObject*)p11);
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$PostfixBurstDelegate::EndInvoke(System.IAsyncResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_EndInvoke_m5A4877E19930C7FDEA80E4D0AFA804CDF876FEAE (GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C* __this, RuntimeObject* p0, const RuntimeMethod* method) 
+{
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) p0, 0);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$BurstDirectCall::GetFunctionPointerDiscard(System.IntPtr&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAssistedVelocityInternal_00000690U24BurstDirectCall_GetFunctionPointerDiscard_mC81A24E2637C936688E202CA0F0CF8D8089427C4 (intptr_t* p0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BurstCompiler_t2715484E1FF256726FC4D4D8E17C35A4C8DFA2B8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XRGazeAssistance_GetAssistedVelocityInternalU24BurstManaged_mED76D1E4ACFD143B2354243B21C0B9207ED19819_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var);
+		intptr_t L_0 = ((GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_StaticFields*)il2cpp_codegen_static_fields_for(GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var))->___Pointer_0;
+		if (L_0)
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var);
+		intptr_t L_1 = ((GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_StaticFields*)il2cpp_codegen_static_fields_for(GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var))->___DeferredCompilation_1;
+		RuntimeMethodHandle_tB35B96E97214DCBE20B0B02B1E687884B34680B2 L_2 = { reinterpret_cast<intptr_t> (XRGazeAssistance_GetAssistedVelocityInternalU24BurstManaged_mED76D1E4ACFD143B2354243B21C0B9207ED19819_RuntimeMethod_var) };
+		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_3 = { reinterpret_cast<intptr_t> (GetAssistedVelocityInternal_00000690U24PostfixBurstDelegate_t920F94131E112790B7B58A8D487AE86C1A7BA83C_0_0_0_var) };
+		il2cpp_codegen_runtime_class_init_inline(BurstCompiler_t2715484E1FF256726FC4D4D8E17C35A4C8DFA2B8_il2cpp_TypeInfo_var);
+		void* L_4;
+		L_4 = BurstCompiler_GetILPPMethodFunctionPointer2_m8C671F61D031A10FC46911AC94B57C1E58D1F567(L_1, L_2, L_3, NULL);
+		((GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_StaticFields*)il2cpp_codegen_static_fields_for(GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var))->___Pointer_0 = (intptr_t)L_4;
+	}
+
+IL_0023:
+	{
+		intptr_t* L_5 = p0;
+		il2cpp_codegen_runtime_class_init_inline(GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var);
+		intptr_t L_6 = ((GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_StaticFields*)il2cpp_codegen_static_fields_for(GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var))->___Pointer_0;
+		*((intptr_t*)L_5) = (intptr_t)L_6;
+		return;
+	}
+}
+// System.IntPtr UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$BurstDirectCall::GetFunctionPointer()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t GetAssistedVelocityInternal_00000690U24BurstDirectCall_GetFunctionPointer_m0CD441347703BE6F439D1C765E5D0DD58B3F4B4F (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		V_0 = ((intptr_t)0);
+		il2cpp_codegen_runtime_class_init_inline(GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var);
+		GetAssistedVelocityInternal_00000690U24BurstDirectCall_GetFunctionPointerDiscard_mC81A24E2637C936688E202CA0F0CF8D8089427C4((&V_0), NULL);
+		intptr_t L_0 = V_0;
+		return L_0;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$BurstDirectCall::Constructor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAssistedVelocityInternal_00000690U24BurstDirectCall_Constructor_m5ED062364943C36AD14230E1E379908C55934BB0 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BurstCompiler_t2715484E1FF256726FC4D4D8E17C35A4C8DFA2B8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&XRGazeAssistance_GetAssistedVelocityInternal_m42C430A825A47BB162F461025C038148CE2F6B1F_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		RuntimeMethodHandle_tB35B96E97214DCBE20B0B02B1E687884B34680B2 L_0 = { reinterpret_cast<intptr_t> (XRGazeAssistance_GetAssistedVelocityInternal_m42C430A825A47BB162F461025C038148CE2F6B1F_RuntimeMethod_var) };
+		il2cpp_codegen_runtime_class_init_inline(BurstCompiler_t2715484E1FF256726FC4D4D8E17C35A4C8DFA2B8_il2cpp_TypeInfo_var);
+		intptr_t L_1;
+		L_1 = BurstCompiler_CompileILPPMethod2_m545A8FC57B460871C1715F32DD601F2C1CA9C7FA(L_0, NULL);
+		il2cpp_codegen_runtime_class_init_inline(GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var);
+		((GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_StaticFields*)il2cpp_codegen_static_fields_for(GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var))->___DeferredCompilation_1 = L_1;
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$BurstDirectCall::Initialize()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAssistedVelocityInternal_00000690U24BurstDirectCall_Initialize_m11C3F0E0225C48303B44BD92787654235BB6C0A4 (const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$BurstDirectCall::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAssistedVelocityInternal_00000690U24BurstDirectCall__cctor_m63DCA7DA1D65AD6425540C6FE2AB4B805A8DFC1C (const RuntimeMethod* method) 
+{
+	{
+		GetAssistedVelocityInternal_00000690U24BurstDirectCall_Constructor_m5ED062364943C36AD14230E1E379908C55934BB0(NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.Interaction.Toolkit.XRGazeAssistance/UnityEngine.XR.Interaction.Toolkit.GetAssistedVelocityInternal_00000690$BurstDirectCall::Invoke(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,UnityEngine.Vector3&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetAssistedVelocityInternal_00000690U24BurstDirectCall_Invoke_mEA4AC92EBEC4DD43692277CE55A0FE811487CBB6 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BurstCompiler_t2715484E1FF256726FC4D4D8E17C35A4C8DFA2B8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_runtime_class_init_inline(BurstCompiler_t2715484E1FF256726FC4D4D8E17C35A4C8DFA2B8_il2cpp_TypeInfo_var);
+		bool L_0;
+		L_0 = BurstCompiler_get_IsEnabled_m55FDBCB2279A83AC8926260034F870E3A11116C7(NULL);
+		if (!L_0)
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(GetAssistedVelocityInternal_00000690U24BurstDirectCall_tAA6D25C43328C856F25531F118804C76B42DC839_il2cpp_TypeInfo_var);
+		intptr_t L_1;
+		L_1 = GetAssistedVelocityInternal_00000690U24BurstDirectCall_GetFunctionPointer_m0CD441347703BE6F439D1C765E5D0DD58B3F4B4F(NULL);
+		V_0 = L_1;
+		intptr_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_002d;
+		}
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3 = ___source0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4 = ___target1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_5 = ___velocity2;
+		float L_6 = ___gravity3;
+		float L_7 = ___maxAngle4;
+		float L_8 = ___requiredSpeed5;
+		float L_9 = ___maxSpeedPercent6;
+		float L_10 = ___assistPercent7;
+		float L_11 = ___epsilon8;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_12 = ___adjustedVelocity9;
+		intptr_t L_13 = V_0;
+		typedef void (CDECL *func_L_14)(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*,Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*,Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*,float,float,float,float,float,float,Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*);
+		((func_L_14)L_13)(L_3,L_4,L_5,L_6,L_7,L_8,L_9,L_10,L_11,L_12);
+		return;
+	}
+
+IL_002d:
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_15 = ___source0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_16 = ___target1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_17 = ___velocity2;
+		float L_18 = ___gravity3;
+		float L_19 = ___maxAngle4;
+		float L_20 = ___requiredSpeed5;
+		float L_21 = ___maxSpeedPercent6;
+		float L_22 = ___assistPercent7;
+		float L_23 = ___epsilon8;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_24 = ___adjustedVelocity9;
+		XRGazeAssistance_GetAssistedVelocityInternalU24BurstManaged_mED76D1E4ACFD143B2354243B21C0B9207ED19819_inline(L_15, L_16, L_17, L_18, L_19, L_20, L_21, L_22, L_23, L_24, NULL);
 		return;
 	}
 }
@@ -36756,14 +37160,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float2_t24AA5C0F612B0672315EDAFEC
 		return L_6;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_lerp_m58A82DB48BBA11871FFA81583C700875B3A9BC84_inline (float ___x0, float ___y1, float ___s2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_lerp_m58A82DB48BBA11871FFA81583C700875B3A9BC84_inline (float ___start0, float ___end1, float ___t2, const RuntimeMethod* method) 
 {
 	{
-		// public static float lerp(float x, float y, float s) { return x + s * (y - x); }
-		float L_0 = ___x0;
-		float L_1 = ___s2;
-		float L_2 = ___y1;
-		float L_3 = ___x0;
+		// public static float lerp(float start, float end, float t) { return start + t * (end - start); }
+		float L_0 = ___start0;
+		float L_1 = ___t2;
+		float L_2 = ___end1;
+		float L_3 = ___start0;
 		return ((float)il2cpp_codegen_add(L_0, ((float)il2cpp_codegen_multiply(L_1, ((float)il2cpp_codegen_subtract(L_2, L_3))))));
 	}
 }
@@ -36881,6 +37285,345 @@ IL_0053:
 	{
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = V_0;
 		return L_24;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRGazeAssistance_GetAssistedVelocityInternalU24BurstManaged_mED76D1E4ACFD143B2354243B21C0B9207ED19819_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___source0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___target1, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___velocity2, float ___gravity3, float ___maxAngle4, float ___requiredSpeed5, float ___maxSpeedPercent6, float ___assistPercent7, float ___epsilon8, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___adjustedVelocity9, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	float V_1 = 0.0f;
+	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	float V_5 = 0.0f;
+	float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA V_6;
+	memset((&V_6), 0, sizeof(V_6));
+	float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA V_7;
+	memset((&V_7), 0, sizeof(V_7));
+	float V_8 = 0.0f;
+	float V_9 = 0.0f;
+	float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA V_10;
+	memset((&V_10), 0, sizeof(V_10));
+	float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E V_11;
+	memset((&V_11), 0, sizeof(V_11));
+	float G_B13_0 = 0.0f;
+	float G_B12_0 = 0.0f;
+	float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA G_B16_0;
+	memset((&G_B16_0), 0, sizeof(G_B16_0));
+	{
+		// var toTarget = (target - source);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = ___target1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_0);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2 = ___source0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_2);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_1, L_3, NULL);
+		V_0 = L_4;
+		// var speed = math.length(velocity);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_5 = ___velocity2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_5);
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_7;
+		L_7 = float3_op_Implicit_mE1831A3AC179B7EB3236F8202EC8DD5CE05376AB(L_6, NULL);
+		float L_8;
+		L_8 = math_length_m6A2B63D7A3B84261C2F7FCAA2CB382288A57D257_inline(L_7, NULL);
+		V_1 = L_8;
+		// var originalDirection = math.normalize(velocity);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_9 = ___velocity2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_9);
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_11;
+		L_11 = float3_op_Implicit_mE1831A3AC179B7EB3236F8202EC8DD5CE05376AB(L_10, NULL);
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_12;
+		L_12 = math_normalize_mF02431EFC9E3212E0245EFF5C13BC9DC34512399_inline(L_11, NULL);
+		V_2 = L_12;
+		// var targetDirection = math.normalize(toTarget);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_0;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_14;
+		L_14 = float3_op_Implicit_mE1831A3AC179B7EB3236F8202EC8DD5CE05376AB(L_13, NULL);
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_15;
+		L_15 = math_normalize_mF02431EFC9E3212E0245EFF5C13BC9DC34512399_inline(L_14, NULL);
+		V_3 = L_15;
+		// if (Vector3.Angle(originalDirection, targetDirection) > maxAngle)
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_16 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		L_17 = float3_op_Implicit_m9CC301DFD67EEFAA15CA05E91913E862B22326F6(L_16, NULL);
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_18 = V_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = float3_op_Implicit_m9CC301DFD67EEFAA15CA05E91913E862B22326F6(L_18, NULL);
+		float L_20;
+		L_20 = Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline(L_17, L_19, NULL);
+		float L_21 = ___maxAngle4;
+		if ((!(((float)L_20) > ((float)L_21))))
+		{
+			goto IL_0063;
+		}
+	}
+	{
+		// adjustedVelocity = velocity;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_22 = ___adjustedVelocity9;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_23 = ___velocity2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_23);
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_22 = L_24;
+		// return;
+		return;
+	}
+
+IL_0063:
+	{
+		// if (gravity < epsilon)
+		float L_25 = ___gravity3;
+		float L_26 = ___epsilon8;
+		if ((!(((float)L_25) < ((float)L_26))))
+		{
+			goto IL_007c;
+		}
+	}
+	{
+		// adjustedVelocity = targetDirection * speed;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_27 = ___adjustedVelocity9;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_28 = V_3;
+		float L_29 = V_1;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_30;
+		L_30 = float3_op_Multiply_m6E5DC552C8B0F9A180298BD9197FF47B14E0EA81_inline(L_28, L_29, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31;
+		L_31 = float3_op_Implicit_m9CC301DFD67EEFAA15CA05E91913E862B22326F6(L_30, NULL);
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_27 = L_31;
+		// return;
+		return;
+	}
+
+IL_007c:
+	{
+		// if (speed < requiredSpeed)
+		float L_32 = V_1;
+		float L_33 = ___requiredSpeed5;
+		if ((!(((float)L_32) < ((float)L_33))))
+		{
+			goto IL_008f;
+		}
+	}
+	{
+		// adjustedVelocity = velocity;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_34 = ___adjustedVelocity9;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_35 = ___velocity2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_36 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_35);
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_34 = L_36;
+		// return;
+		return;
+	}
+
+IL_008f:
+	{
+		// float3 xzFacing = toTarget;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37 = V_0;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_38;
+		L_38 = float3_op_Implicit_mE1831A3AC179B7EB3236F8202EC8DD5CE05376AB(L_37, NULL);
+		V_4 = L_38;
+		// xzFacing.y = 0f;
+		(&V_4)->___y_1 = (0.0f);
+		// var xzDistance = math.length(xzFacing);
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_39 = V_4;
+		float L_40;
+		L_40 = math_length_m6A2B63D7A3B84261C2F7FCAA2CB382288A57D257_inline(L_39, NULL);
+		V_5 = L_40;
+		// if (xzDistance < epsilon)
+		float L_41 = V_5;
+		float L_42 = ___epsilon8;
+		if ((!(((float)L_41) < ((float)L_42))))
+		{
+			goto IL_00c0;
+		}
+	}
+	{
+		// adjustedVelocity = velocity;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_43 = ___adjustedVelocity9;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_44 = ___velocity2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_45 = (*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_44);
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_43 = L_45;
+		// return;
+		return;
+	}
+
+IL_00c0:
+	{
+		// var parabolicSolve = new float2(math.sqrt((0.5f * gravity * (xzDistance * xzDistance)) / (xzDistance - toTarget.y)), 0f);
+		float L_46 = ___gravity3;
+		float L_47 = V_5;
+		float L_48 = V_5;
+		float L_49 = V_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50 = V_0;
+		float L_51 = L_50.___y_3;
+		float L_52;
+		L_52 = math_sqrt_mEF31DE7BD0179009683C5D7B0C58E6571B30CF4A_inline(((float)(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply((0.5f), L_46)), ((float)il2cpp_codegen_multiply(L_47, L_48))))/((float)il2cpp_codegen_subtract(L_49, L_51)))), NULL);
+		float2__ctor_m3D598E2C2D173DE852F3AB157502968261383C97_inline((&V_6), L_52, (0.0f), NULL);
+		// parabolicSolve.y = parabolicSolve.x;
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_53 = V_6;
+		float L_54 = L_53.___x_0;
+		(&V_6)->___y_1 = L_54;
+		// var lowSolve = new float2(parabolicSolve.x, 0f);
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_55 = V_6;
+		float L_56 = L_55.___x_0;
+		float2__ctor_m3D598E2C2D173DE852F3AB157502968261383C97_inline((&V_7), L_56, (0.0f), NULL);
+		// if (toTarget.y < 0f)
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_57 = V_0;
+		float L_58 = L_57.___y_3;
+		if ((!(((float)L_58) < ((float)(0.0f)))))
+		{
+			goto IL_0139;
+		}
+	}
+	{
+		// lowSolve.x = math.sqrt((0.5f * gravity * xzDistance * xzDistance / -toTarget.y));
+		float L_59 = ___gravity3;
+		float L_60 = V_5;
+		float L_61 = V_5;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_62 = V_0;
+		float L_63 = L_62.___y_3;
+		float L_64;
+		L_64 = math_sqrt_mEF31DE7BD0179009683C5D7B0C58E6571B30CF4A_inline(((float)(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply((0.5f), L_59)), L_60)), L_61))/((-L_63)))), NULL);
+		(&V_7)->___x_0 = L_64;
+		goto IL_017f;
+	}
+
+IL_0139:
+	{
+		// lowSolve.x *= 2f;
+		float* L_65 = (&(&V_7)->___x_0);
+		float* L_66 = L_65;
+		float L_67 = *((float*)L_66);
+		*((float*)L_66) = (float)((float)il2cpp_codegen_multiply(L_67, (2.0f)));
+		// lowSolve.y = lowSolve.x * (toTarget.y + (0.5f * gravity * (xzDistance / lowSolve.x) * (xzDistance / lowSolve.x))) / xzDistance;
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_68 = V_7;
+		float L_69 = L_68.___x_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_70 = V_0;
+		float L_71 = L_70.___y_3;
+		float L_72 = ___gravity3;
+		float L_73 = V_5;
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_74 = V_7;
+		float L_75 = L_74.___x_0;
+		float L_76 = V_5;
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_77 = V_7;
+		float L_78 = L_77.___x_0;
+		float L_79 = V_5;
+		(&V_7)->___y_1 = ((float)(((float)il2cpp_codegen_multiply(L_69, ((float)il2cpp_codegen_add(L_71, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply((0.5f), L_72)), ((float)(L_73/L_75)))), ((float)(L_76/L_78))))))))/L_79));
+	}
+
+IL_017f:
+	{
+		// var parabolicSpeed = math.length(parabolicSolve);
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_80 = V_6;
+		float L_81;
+		L_81 = math_length_m3DB47D254C8544FBB740A892B4AE2143E8F45634_inline(L_80, NULL);
+		// var lowSpeed = math.length(lowSolve);
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_82 = V_7;
+		float L_83;
+		L_83 = math_length_m3DB47D254C8544FBB740A892B4AE2143E8F45634_inline(L_82, NULL);
+		V_8 = L_83;
+		// var parabolicDif = math.abs(parabolicSpeed - speed);
+		float L_84 = V_1;
+		float L_85;
+		L_85 = math_abs_m3D9508B36B045BFE7B89C6C69AD34596264E4FE1_inline(((float)il2cpp_codegen_subtract(L_81, L_84)), NULL);
+		// var lowDif = math.abs(lowSpeed - speed);
+		float L_86 = V_8;
+		float L_87 = V_1;
+		float L_88;
+		L_88 = math_abs_m3D9508B36B045BFE7B89C6C69AD34596264E4FE1_inline(((float)il2cpp_codegen_subtract(L_86, L_87)), NULL);
+		V_9 = L_88;
+		// if (velocity.y <= 0f)
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_89 = ___velocity2;
+		float L_90 = L_89->___y_3;
+		G_B12_0 = L_85;
+		if ((!(((float)L_90) <= ((float)(0.0f)))))
+		{
+			G_B13_0 = L_85;
+			goto IL_01b8;
+		}
+	}
+	{
+		// lowDif *= 0.25f;
+		float L_91 = V_9;
+		V_9 = ((float)il2cpp_codegen_multiply(L_91, (0.25f)));
+		G_B13_0 = G_B12_0;
+	}
+
+IL_01b8:
+	{
+		// var chosenSolve = parabolicDif < lowDif ? parabolicSolve : lowSolve;
+		float L_92 = V_9;
+		if ((((float)G_B13_0) < ((float)L_92)))
+		{
+			goto IL_01c0;
+		}
+	}
+	{
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_93 = V_7;
+		G_B16_0 = L_93;
+		goto IL_01c2;
+	}
+
+IL_01c0:
+	{
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_94 = V_6;
+		G_B16_0 = L_94;
+	}
+
+IL_01c2:
+	{
+		V_10 = G_B16_0;
+		// chosenSolve = math.normalize(chosenSolve) * math.min(math.length(chosenSolve), maxSpeedPercent * speed);
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_95 = V_10;
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_96;
+		L_96 = math_normalize_mAB67BF670979DC2A6C8B30791BFF8476FEC1B5CD_inline(L_95, NULL);
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_97 = V_10;
+		float L_98;
+		L_98 = math_length_m3DB47D254C8544FBB740A892B4AE2143E8F45634_inline(L_97, NULL);
+		float L_99 = ___maxSpeedPercent6;
+		float L_100 = V_1;
+		float L_101;
+		L_101 = math_min_m54FD010BEF505D2BA1F79FC793BEB0723C329C3B_inline(L_98, ((float)il2cpp_codegen_multiply(L_99, L_100)), NULL);
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_102;
+		L_102 = float2_op_Multiply_m34D03129CE0D7AD665A914DE83CB749585B2455F_inline(L_96, L_101, NULL);
+		V_10 = L_102;
+		// float3 assistVelocity = math.normalize(xzFacing) * chosenSolve.x;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_103 = V_4;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_104;
+		L_104 = math_normalize_mF02431EFC9E3212E0245EFF5C13BC9DC34512399_inline(L_103, NULL);
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_105 = V_10;
+		float L_106 = L_105.___x_0;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_107;
+		L_107 = float3_op_Multiply_m6E5DC552C8B0F9A180298BD9197FF47B14E0EA81_inline(L_104, L_106, NULL);
+		V_11 = L_107;
+		// assistVelocity.y = chosenSolve.y;
+		float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA L_108 = V_10;
+		float L_109 = L_108.___y_1;
+		(&V_11)->___y_1 = L_109;
+		// adjustedVelocity = Vector3.Slerp(originalDirection, math.normalize(assistVelocity), assistPercent) * math.lerp(speed, math.length(assistVelocity), assistPercent);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_110 = ___adjustedVelocity9;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_111 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_112;
+		L_112 = float3_op_Implicit_m9CC301DFD67EEFAA15CA05E91913E862B22326F6(L_111, NULL);
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_113 = V_11;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_114;
+		L_114 = math_normalize_mF02431EFC9E3212E0245EFF5C13BC9DC34512399_inline(L_113, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_115;
+		L_115 = float3_op_Implicit_m9CC301DFD67EEFAA15CA05E91913E862B22326F6(L_114, NULL);
+		float L_116 = ___assistPercent7;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_117;
+		L_117 = Vector3_Slerp_m6CA14E5B6F6217802BAA0ADD2C9D086C741BA09C(L_112, L_115, L_116, NULL);
+		float L_118 = V_1;
+		float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E L_119 = V_11;
+		float L_120;
+		L_120 = math_length_m6A2B63D7A3B84261C2F7FCAA2CB382288A57D257_inline(L_119, NULL);
+		float L_121 = ___assistPercent7;
+		float L_122;
+		L_122 = math_lerp_m58A82DB48BBA11871FFA81583C700875B3A9BC84_inline(L_118, L_120, L_121, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_123;
+		L_123 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_117, L_122, NULL);
+		*(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)L_110 = L_123;
+		// }
+		return;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* BaseInteractionEventArgs_get_interactorObject_mDC483F1AAA1267A774B677E14189A3EDD1040864_inline (BaseInteractionEventArgs_t8B38B6C63C6C9EA4BD179EF5FD40106872B82D7E* __this, const RuntimeMethod* method) 
@@ -38376,21 +39119,17 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_dot_mF673D3E5B7D267C0A
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t math_asuint_m503D1ABF19E4BA615FD8AE1BF1A2E103BBED6139_inline (float ___x0, const RuntimeMethod* method) 
 {
 	{
-		// public static uint asuint(float x) { return (uint)asint(x); }
-		float L_0 = ___x0;
-		int32_t L_1;
-		L_1 = math_asint_mBDED7FE966CA65F6A8ACEAEF8FD779B1B8998288_inline(L_0, NULL);
-		return L_1;
+		// return *(uint*)&x;
+		int32_t L_0 = *((uint32_t*)((uintptr_t)(&___x0)));
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m20D259DAAB46464B59BD8BF5678F9D59800F70A9_inline (uint32_t ___x0, const RuntimeMethod* method) 
 {
 	{
-		// public static float  asfloat(uint x) { return asfloat((int)x); }
-		uint32_t L_0 = ___x0;
-		float L_1;
-		L_1 = math_asfloat_m9FA56DE5C61FCEF3DCD0675252D40DFD9C9B712F_inline(L_0, NULL);
-		return L_1;
+		// return *(float*)&x;
+		float L_0 = *((float*)((uintptr_t)(&___x0)));
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA float2_op_Multiply_m9117237F9A26A1B934C1DE0A5FE5BD6EF7D3B26C_inline (float ___lhs0, float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA ___rhs1, const RuntimeMethod* method) 
@@ -38520,38 +39259,6 @@ IL_000c:
 	{
 		float L_4 = V_0;
 		return L_4;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t math_asint_mBDED7FE966CA65F6A8ACEAEF8FD779B1B8998288_inline (float ___x0, const RuntimeMethod* method) 
-{
-	IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		// u.intValue = 0;
-		(&V_0)->___intValue_0 = 0;
-		// u.floatValue = x;
-		float L_0 = ___x0;
-		(&V_0)->___floatValue_1 = L_0;
-		// return u.intValue;
-		IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 L_1 = V_0;
-		int32_t L_2 = L_1.___intValue_0;
-		return L_2;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float math_asfloat_m9FA56DE5C61FCEF3DCD0675252D40DFD9C9B712F_inline (int32_t ___x0, const RuntimeMethod* method) 
-{
-	IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		// u.floatValue = 0;
-		(&V_0)->___floatValue_1 = (0.0f);
-		// u.intValue = x;
-		int32_t L_0 = ___x0;
-		(&V_0)->___intValue_0 = L_0;
-		// return u.floatValue;
-		IntFloatUnion_t549256A9DD754252DD18383D9CE7EA55EBBD6D96 L_1 = V_0;
-		float L_2 = L_1.___floatValue_1;
-		return L_2;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t BitConverter_SingleToInt32Bits_mC760C7CFC89725E3CF68DC45BE3A9A42A7E7DA73_inline (float ___value0, const RuntimeMethod* method) 
