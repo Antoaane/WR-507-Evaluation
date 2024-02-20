@@ -17,11 +17,11 @@ public class SwitchButtonController : MonoBehaviour
 			isOn = !isOn;
             if (isOn)
             {
-			    transform.Rotate(new Vector3(30f, 0f, 0f));
+			    transform.Rotate(new Vector3(20f, 0f, 0f));
 				usb.SetActive(true);
             } else
             {
-			    transform.Rotate(new Vector3(-30f, 0f, 0f));
+			    transform.Rotate(new Vector3(-20f, 0f, 0f));
 				usb.SetActive(false);
             }
 	}
