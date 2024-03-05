@@ -13,6 +13,7 @@ public class ScrenController : MonoBehaviour
     [SerializeField] private GameObject Screen5;
     [SerializeField] private GameObject Screen6;
     [SerializeField] private GameObject Projecteur;
+	[SerializeField] private GameManager GameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -35,5 +36,6 @@ public class ScrenController : MonoBehaviour
         Screen5.GetComponent<Renderer>().material = CameraMaterial;
         Screen6.GetComponent<Renderer>().material = CameraMaterial;
         Projecteur.GetComponent<Renderer>().material = CameraMaterial;
+        GameManager.ShowHint(3);
     }
 }
