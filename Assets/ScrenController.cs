@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ScrenController : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class ScrenController : MonoBehaviour
     [SerializeField] private GameObject Screen6;
     [SerializeField] private GameObject Projecteur;
 	[SerializeField] private GameManager GameManager;
+    [SerializeField] private XRGrabInteractable usbGrab;
 
     // Start is called before the first frame update
     void Start()
@@ -37,5 +39,6 @@ public class ScrenController : MonoBehaviour
         Screen6.GetComponent<Renderer>().material = CameraMaterial;
         Projecteur.GetComponent<Renderer>().material = CameraMaterial;
         GameManager.ShowHint(3);
+        usbGrab.enabled = false; // Checkpoint, pas possible de revenir avant.
     }
 }
