@@ -13,8 +13,11 @@ public class WinController : MonoBehaviour
     {
         if (collider.name == "XR Origin (XR Rig)")
         {
-            GameManager.ShowHint(10);
-            Rig.transform.position = teleportTarget.transform.position;
+            if (GameManager.isCodeCompleted() == true)
+            {
+                GameManager.ShowHint(10);
+                Rig.transform.position = teleportTarget.transform.position;
+            }
         }
     }
 }

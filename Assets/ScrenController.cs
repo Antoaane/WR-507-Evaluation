@@ -39,6 +39,7 @@ public class ScrenController : MonoBehaviour
         Screen6.GetComponent<Renderer>().material = CameraMaterial;
         Projecteur.GetComponent<Renderer>().material = CameraMaterial;
         GameManager.ShowHint(3);
+        GameManager.unlockOtherDoor();
         usbGrab.enabled = false; // Checkpoint, pas possible de revenir avant.
     }
 }
