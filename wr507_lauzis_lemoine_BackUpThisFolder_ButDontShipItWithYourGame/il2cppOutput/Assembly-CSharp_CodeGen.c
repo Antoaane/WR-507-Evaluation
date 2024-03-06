@@ -48,11 +48,15 @@ extern void SwitchButtonController_Start_m5436FDD2E1A29B9C57C9AC901D0BA5919FF36B
 extern void SwitchButtonController_ToggleSwitch_mC50938A6E7E577C9C368F8208BEEC04F6D1B92D9 (void);
 // 0x00000012 System.Void SwitchButtonController::.ctor()
 extern void SwitchButtonController__ctor_m39585128EA94B64276D93037A7B11E3E7084EA97 (void);
-// 0x00000013 System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
+// 0x00000013 System.Void WinController::OnTriggerEnter(UnityEngine.Collider)
+extern void WinController_OnTriggerEnter_m4568B9B2B7C0340B624963349F6D7239EACE9D37 (void);
+// 0x00000014 System.Void WinController::.ctor()
+extern void WinController__ctor_m697635D3C4B9AA33F85F8E80B4C9BDCA950844AE (void);
+// 0x00000015 System.Void Unity.Template.VR.XRPlatformControllerSetup::Start()
 extern void XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF (void);
-// 0x00000014 System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
+// 0x00000016 System.Void Unity.Template.VR.XRPlatformControllerSetup::.ctor()
 extern void XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E (void);
-static Il2CppMethodPointer s_methodPointers[20] = 
+static Il2CppMethodPointer s_methodPointers[22] = 
 {
 	GameManager_Start_m87A71D65F3171A58DBDDBFB03832ADA65643D0E2,
 	GameManager_RestartGame_m03813C863F1F1ABB9DC30BC371E2F088D7B01F75,
@@ -72,10 +76,12 @@ static Il2CppMethodPointer s_methodPointers[20] =
 	SwitchButtonController_Start_m5436FDD2E1A29B9C57C9AC901D0BA5919FF36BB5,
 	SwitchButtonController_ToggleSwitch_mC50938A6E7E577C9C368F8208BEEC04F6D1B92D9,
 	SwitchButtonController__ctor_m39585128EA94B64276D93037A7B11E3E7084EA97,
+	WinController_OnTriggerEnter_m4568B9B2B7C0340B624963349F6D7239EACE9D37,
+	WinController__ctor_m697635D3C4B9AA33F85F8E80B4C9BDCA950844AE,
 	XRPlatformControllerSetup_Start_m1F22FCA29DFD83DC0E343C3F391D04A7C52085BF,
 	XRPlatformControllerSetup__ctor_mF9A3998AF90962CF8F35BAF2221558BDF5F6596E,
 };
-static const int32_t s_InvokerIndices[20] = 
+static const int32_t s_InvokerIndices[22] = 
 {
 	5444,
 	5444,
@@ -95,6 +101,8 @@ static const int32_t s_InvokerIndices[20] =
 	5444,
 	5444,
 	5444,
+	4293,
+	5444,
 	5444,
 	5444,
 };
@@ -102,7 +110,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	20,
+	22,
 	s_methodPointers,
 	0,
 	NULL,
