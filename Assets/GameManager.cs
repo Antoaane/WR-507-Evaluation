@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
             hintList = new List<string>(4)
             {
                 "Il fait sombre...",
-                "Mais où je l'ai laissé trainée déjà ?",
+                "Mais où je l'ai laissé trainer déjà ?",
                 "Hop, dans l'ordinateur !",
                 "Ho les écrans se sont allumés !",
             };
