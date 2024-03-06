@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text HintText;
     [SerializeField] private List<string> hintList;
+    [SerializeField] private XRGrabInteractable winDoorGrab;
+    [SerializeField] private XRGrabInteractable hintDoorGrab;
+    [SerializeField] private XRGrabInteractable otherDoorGrab;
+
     void Start()
     {
         if (hintList == null || hintList.Count == 0)
@@ -21,6 +26,9 @@ public class GameManager : MonoBehaviour
             };
         }
         ShowHint(0);
+        winDoorGrab.enabled = false;
+        hintDoorGrab.enabled = false;
+        otherDoorGrab.enabled = false;
     }
 
     public void RestartGame()
@@ -34,5 +42,16 @@ public class GameManager : MonoBehaviour
             HintText.text = hintList[level] + "\n";
         else
             HintText.text = "Déjà fini ? Recommence !\n";
+    }
+
+    public void unlockWinDoor()
+    {
+        winDoorGrab.enabled = true;
+    }
+
+    public void unlockOtherDoor()
+    {
+        hintDoorGrab.enabled = true;
+        otherDoorGrab.enabled = true;
     }
 }

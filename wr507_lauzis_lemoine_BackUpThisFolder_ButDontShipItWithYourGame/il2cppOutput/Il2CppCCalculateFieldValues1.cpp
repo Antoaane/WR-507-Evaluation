@@ -1280,6 +1280,8 @@ struct XRBaseInteractor_tB48889E8D95695ABF46D2012EC55EA660103D158;
 struct XRDeviceSimulatorSettings_tB0BCA250B0268AE19F26D50EBE9F151D66F83CE0;
 // UnityEngine.XR.Interaction.Toolkit.XRDirectInteractor
 struct XRDirectInteractor_t1901BC018A818AE3059663EDCC68EDFFE1A8925B;
+// UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable
+struct XRGrabInteractable_t8F7EA04527E7074002690EA93ACEAEFEBD79A772;
 // UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.State.XRInteractableAffordanceStateProvider
 struct XRInteractableAffordanceStateProvider_tBF33F0A41B1960C8FE2CCAFC6228E07D8A459C98;
 // UnityEngine.XR.Interaction.Toolkit.XRInteractionGroup
@@ -25065,6 +25067,12 @@ struct GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6  : public MonoBehav
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___HintText_4;
 	// System.Collections.Generic.List`1<System.String> GameManager::hintList
 	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___hintList_5;
+	// UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable GameManager::winDoor
+	XRGrabInteractable_t8F7EA04527E7074002690EA93ACEAEFEBD79A772* ___winDoor_6;
+	// UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable GameManager::hintDoor
+	XRGrabInteractable_t8F7EA04527E7074002690EA93ACEAEFEBD79A772* ___hintDoor_7;
+	// UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable GameManager::otherDoor
+	XRGrabInteractable_t8F7EA04527E7074002690EA93ACEAEFEBD79A772* ___otherDoor_8;
 };
 
 // UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.GazeInputManager
@@ -33202,9 +33210,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5178[5] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5182[6] = 
 {
 	static_cast<int32_t>(offsetof(MockRuntime_tC5F1019CA2D3E89010E3A3BFC89834251257B2AF_StaticFields, ___s_AfterFunctionCallbacks_16)),static_cast<int32_t>(offsetof(MockRuntime_tC5F1019CA2D3E89010E3A3BFC89834251257B2AF_StaticFields, ___s_BeforeFunctionCallbacks_17)),static_cast<int32_t>(offsetof(MockRuntime_tC5F1019CA2D3E89010E3A3BFC89834251257B2AF_StaticFields, ___onScriptEvent_18)),0,static_cast<int32_t>(offsetof(MockRuntime_tC5F1019CA2D3E89010E3A3BFC89834251257B2AF, ___ignoreValidationErrors_20)),0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5184[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5184[5] = 
 {
-	static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___HintText_4)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___hintList_5)),};
+	static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___HintText_4)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___hintList_5)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___winDoor_6)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___hintDoor_7)),static_cast<int32_t>(offsetof(GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6, ___otherDoor_8)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5185[3] = 
 {
 	static_cast<int32_t>(offsetof(HandAnimatorController_tDDF5639940193291093F9E8D9A7D45502C84AABA, ___triggerAction_4)),static_cast<int32_t>(offsetof(HandAnimatorController_tDDF5639940193291093F9E8D9A7D45502C84AABA, ___gripAction_5)),static_cast<int32_t>(offsetof(HandAnimatorController_tDDF5639940193291093F9E8D9A7D45502C84AABA, ___anim_6)),};
