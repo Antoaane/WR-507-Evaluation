@@ -8,11 +8,11 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - MainCamera
   - Water
   - UI
-  - 
-  - 
+  - Grabbable
+  - ScrennCamera
   - 
   - 
   - 
