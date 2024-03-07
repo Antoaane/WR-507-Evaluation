@@ -74,12 +74,14 @@ public class CodeController : MonoBehaviour
             GameManager.unlockWinDoor();
             GameManager.setCompleteCode(true);
             padlock.SetActive(false);
+            GameManager.ShowHint(4);
         }
         else
         {
             GameManager.lockWinDoor();
             GameManager.setCompleteCode(false);
             padlock.SetActive(true);
+            GameManager.ShowHint(3);
         }
     }
 }

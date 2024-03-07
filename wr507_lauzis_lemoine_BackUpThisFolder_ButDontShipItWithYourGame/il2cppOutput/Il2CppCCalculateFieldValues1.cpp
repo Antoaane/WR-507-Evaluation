@@ -25446,14 +25446,12 @@ struct ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3  : public MonoB
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Screen4_9;
 	// UnityEngine.GameObject ScrenController::Screen5
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Screen5_10;
-	// UnityEngine.GameObject ScrenController::Screen6
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Screen6_11;
 	// UnityEngine.GameObject ScrenController::Projecteur
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Projecteur_12;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Projecteur_11;
 	// GameManager ScrenController::GameManager
-	GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* ___GameManager_13;
+	GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* ___GameManager_12;
 	// UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable ScrenController::usbGrab
-	XRGrabInteractable_t8F7EA04527E7074002690EA93ACEAEFEBD79A772* ___usbGrab_14;
+	XRGrabInteractable_t8F7EA04527E7074002690EA93ACEAEFEBD79A772* ___usbGrab_13;
 };
 
 // SwitchButtonController
@@ -25552,6 +25550,8 @@ struct WinController_t330E97178E5E861EB36C281FAAEE9ED34762FDB7  : public MonoBeh
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Rig_5;
 	// GameManager WinController::GameManager
 	GameManager_tFE129A0017AF5BBD30FDCD4403B9CCEAE064C6B6* ___GameManager_6;
+	// UnityEngine.AudioSource WinController::WinSound
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___WinSound_7;
 };
 
 // UnityEngine.XR.Interaction.Toolkit.Transformers.XRBaseGrabTransformer
@@ -33274,15 +33274,15 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5173[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5174[4] = 
 {
 	static_cast<int32_t>(offsetof(HintAnimator_t784EDA692F34CE8402E4A4EE75006D7772E6C53C, ___amplitude_4)),static_cast<int32_t>(offsetof(HintAnimator_t784EDA692F34CE8402E4A4EE75006D7772E6C53C, ___speed_5)),static_cast<int32_t>(offsetof(HintAnimator_t784EDA692F34CE8402E4A4EE75006D7772E6C53C, ___newPos_6)),static_cast<int32_t>(offsetof(HintAnimator_t784EDA692F34CE8402E4A4EE75006D7772E6C53C, ___startPositionY_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5175[11] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5175[10] = 
 {
-	static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___BlackMaterial_4)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___CameraMaterial_5)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___Screen1_6)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___Screen2_7)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___Screen3_8)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___Screen4_9)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___Screen5_10)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___Screen6_11)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___Projecteur_12)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___GameManager_13)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___usbGrab_14)),};
+	static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___BlackMaterial_4)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___CameraMaterial_5)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___Screen1_6)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___Screen2_7)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___Screen3_8)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___Screen4_9)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___Screen5_10)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___Projecteur_11)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___GameManager_12)),static_cast<int32_t>(offsetof(ScrenController_t9B98D94F6788326F9BFCB952100052A3E1BB9EF3, ___usbGrab_13)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5176[3] = 
 {
 	static_cast<int32_t>(offsetof(SwitchButtonController_t7D0EB4ADC50800E96A7962B6EE6FEB15D5CC5BFB, ___isOn_4)),static_cast<int32_t>(offsetof(SwitchButtonController_t7D0EB4ADC50800E96A7962B6EE6FEB15D5CC5BFB, ___usb_5)),static_cast<int32_t>(offsetof(SwitchButtonController_t7D0EB4ADC50800E96A7962B6EE6FEB15D5CC5BFB, ___GameManager_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5177[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5177[4] = 
 {
-	static_cast<int32_t>(offsetof(WinController_t330E97178E5E861EB36C281FAAEE9ED34762FDB7, ___teleportTarget_4)),static_cast<int32_t>(offsetof(WinController_t330E97178E5E861EB36C281FAAEE9ED34762FDB7, ___Rig_5)),static_cast<int32_t>(offsetof(WinController_t330E97178E5E861EB36C281FAAEE9ED34762FDB7, ___GameManager_6)),};
+	static_cast<int32_t>(offsetof(WinController_t330E97178E5E861EB36C281FAAEE9ED34762FDB7, ___teleportTarget_4)),static_cast<int32_t>(offsetof(WinController_t330E97178E5E861EB36C281FAAEE9ED34762FDB7, ___Rig_5)),static_cast<int32_t>(offsetof(WinController_t330E97178E5E861EB36C281FAAEE9ED34762FDB7, ___GameManager_6)),static_cast<int32_t>(offsetof(WinController_t330E97178E5E861EB36C281FAAEE9ED34762FDB7, ___WinSound_7)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5178[4] = 
 {
 	static_cast<int32_t>(offsetof(XRPlatformControllerSetup_tF3241056E2DD26648305E205151EB2ACF3333628, ___m_LeftController_4)),static_cast<int32_t>(offsetof(XRPlatformControllerSetup_tF3241056E2DD26648305E205151EB2ACF3333628, ___m_RightController_5)),static_cast<int32_t>(offsetof(XRPlatformControllerSetup_tF3241056E2DD26648305E205151EB2ACF3333628, ___m_LeftControllerOculusPackage_6)),static_cast<int32_t>(offsetof(XRPlatformControllerSetup_tF3241056E2DD26648305E205151EB2ACF3333628, ___m_RightControllerOculusPackage_7)),};

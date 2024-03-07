@@ -18,12 +18,14 @@ public class GameManager : MonoBehaviour
     {
         if (hintList == null || hintList.Count == 0)
         {
-            hintList = new List<string>(4)
+            hintList = new List<string>(5)
             {
                 "Il fait sombre...",
-                "Mais où je l'ai laissé trainer déjà ?",
+                "Cette clé USB ne doit pas être bien loin...",
                 "Hop, dans l'ordinateur !",
-                "Ho les écrans se sont allumés !",
+                "Le cercle chromatique n'est pas ici pour rien...",
+                "Mais où est passé le cadenas ?",
+                ""
             };
         }
         ShowHint(0);
